@@ -1,18 +1,14 @@
 import React from "react";
+//import { Link } from "react-router-dom";
+import "../static/Home.css"; 
 
 
-function Home() {
+function Home(){
+
   return (
-    <div>
-    <div
-    style={{
-       backgroundImage: `url("https://www.nicesnippets.com/image/imgpsh_fullsize.png")`,backgroundRepeat: 'no-repeat',width:'250px',height:'250px',color:'white'
-    }}>
-      Nice Snippets
-    </div>
-      <h1>hey Welcome to homepage</h1>
-    
-    </div>
+    <>   
+  hey thee
+  </>
   );
 }
 

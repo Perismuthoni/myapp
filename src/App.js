@@ -11,8 +11,9 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Register from "./components/Register";
 import Login from "./components/Login";
-
+import Profile  from "./components/Profile";
 import "./App.css";
+
 class App extends React.Component {
   render() {
     return (<>
@@ -27,6 +28,9 @@ class App extends React.Component {
         <Route path={"/about"} component={About} />
         <Route path={"/register"} component={Register} />
         <Route path={"/login"} component={Login} />
+        <Route path={"/profile"} component={Profile} />
+        
+
       </Router>
       </>
     );
