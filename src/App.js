@@ -2,7 +2,7 @@ import React from "react";
 // import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Root from "./components/Root";
-import Nav from "./components/Nav";
+//import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Events from "./components/Events";
 import Services from "./components/Services";
@@ -18,7 +18,6 @@ class App extends React.Component {
   render() {
     return (<>
       <Router>
-      <Nav></Nav>
         <Route path={"/"} component={Root} />
         <Route path="/home" component={Home} />
         <Route path="/events" component={Events} />

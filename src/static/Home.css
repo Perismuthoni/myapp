@@ -1,10 +1,63 @@
-.container{
-    background-image:url(http://winnerhun.uw.hu/vigyorpofa.gif);
-    background-repeat:no-repeat;
-    width:48px;
-    height:48px;    
-    padding-left: 20px; 
-  }
-  
-  
- 
+a {
+    color: #FFF;
+}
+.navbar {
+    background-color:black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.image {
+    height: 200px;
+    width: 350px;
+}
+.waveimage {
+    height: 50;
+    width: 350;
+}
+.icon-container {
+   content: icon;
+   shape-image-threshold: initial;
+   list-style-position: inside;
+
+}
+.some-page-wrapper {
+    margin: 0px;
+    background-color:black;
+    height: 400;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.blue-column {
+    background-color:black;
+    height: 450px;
+}
+
+.green-column {
+    background-color:black;
+    color: gold;
+    height: 450px;
+    text-decoration-color: gold;
+    -moz-text-decoration-color: gold;
+}
+
+
+    
