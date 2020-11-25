@@ -1,8 +1,25 @@
 import React from "react";
 import ReactTable from "react-table-6"; 
+import "react-table-6/react-table.css"; 
 import "../static/Services.css";
+import { Link } from "react-router-dom";
 
 function Services() {
+  
+   const columns = [
+     {
+       Header: "Service",
+       accessor: "name",
+     },
+     {
+       Header: "Package",
+       accessor: "package",
+     },
+     {
+       Header: "price",
+       accessor: "price",
+     },
+   ];
    const data = [
      {
        name: "Photography",
@@ -44,21 +61,179 @@ function Services() {
        package: "album",
        price: 26,
      },
+   ]
+  const audioData = [
+      {
+        name: "Photography",
+        package: "unlimited",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        package: "one photo",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        package: "economic",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        package: "unlimited(event)",
+        price: 26,
+      },
+      {
+        name: "Videography",
+        package: "single",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        package: "album",
+        price: 26,
+      },
+      {
+        name: "School of Photography",
+        package: "album",
+        price: 26,
+      },
+      {
+        name: "School of videography",
+        package: "album",
+        price: 26,
+      },
+    ];
+  const musicData = [
+     {
+       name: "Guitar lessons",
+       package: "unlimited",
+       price: 26,
+     },
+     {
+       name: "Guitar lessons",
+       package: "one photo",
+       price: 26,
+     },
+     {
+       name: "Guitar lessons",
+       package: "economic",
+       price: 26,
+     },
+     {
+       name: "Guitar lessons",
+       package: "unlimited(event)",
+       price: 26,
+     },
+     {
+       name: "Videography",
+       package: "single",
+       price: 26,
+     },
+     {
+       name: "Photography",
+       package: "album",
+       price: 26,
+     },
+     {
+       name: "School of Photography",
+       package: "album",
+       price: 26,
+     },
+     {
+       name: "School of videography",
+       package: "album",
+       price: 26,
+     },
    ];
-   const columns = [
-     {
-       Header: "Service",
-       accessor: "name",
-     },
-     {
-       Header: "Package",
-       accessor: "package",
-     },
-     {
-       Header: "price",
-       accessor: "price",
-     },
-   ];  
+  const advertisementData = [
+    {
+      name: "Photography",
+      package: "unlimited",
+      price: 26,
+    },
+    {
+      name: "Photography",
+      package: "one photo",
+      price: 26,
+    },
+    {
+      name: "Photography",
+      package: "economic",
+      price: 26,
+    },
+    {
+      name: "Photography",
+      package: "unlimited(event)",
+      price: 26,
+    },
+    {
+      name: "Videography",
+      package: "single",
+      price: 26,
+    },
+    {
+      name: "Photography",
+      package: "album",
+      price: 26,
+    },
+    {
+      name: "School of Photography",
+      package: "album",
+      price: 26,
+    },
+    {
+      name: "School of videography",
+      package: "album",
+      price: 26,
+    },
+  ];
+  const eventData = [
+      {
+        name: "Photography",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        price: 26,
+      },
+      {
+        name: "Videography",
+        price: 26,
+      },
+      {
+        name: "Photography",
+        price: 26,
+      },
+      {
+        name: "School of Photography",
+        price: 26,
+      },
+      {
+        name: "School of videography",
+        price: 26,
+      },
+    ];
+      const eventColumns = [
+        {
+          Header: "Service",
+          accessor: "name",
+        },
+        {
+          Header: "price",
+          accessor: "price",
+        },
+      ];
+   
+    
   return (
     <div>
       <div className="container">
@@ -73,8 +248,19 @@ function Services() {
           <div className="row1"></div>
           <div class="column">
             <div className="photography">
+              <p>
+                <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
+              </p>
+              <p>
+                <button>
+                  <Link to="/login">Book Appointment</Link>
+                </button>
+              </p>
               <div>
-                <ReactTable data={data} columns={columns} defaultPageSize={8} />
+                <ReactTable 
+                data={data} 
+                columns={columns} 
+                defaultPageSize={8} />
               </div>
             </div>
           </div>
@@ -83,33 +269,92 @@ function Services() {
 
         <div class="row">
           <div class="column">
-            <p>this is column school of music</p>
-            <div>
-              <ReactTable
-                data={data}
-                columns={columns}
-                defaultPageSize={6}
-                pageSizeOptions={[2, 4, 6]}
-              />
+            <div className="photography">
+              <p>
+                <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
+              </p>
+              <p>
+                <button>
+                  <Link to="/login">Book Appointment</Link>
+                </button>
+              </p>
+              <div>
+                <ReactTable
+                  data={audioData}
+                  columns={columns}
+                  defaultPageSize={8}
+                />
+              </div>
             </div>
           </div>
           <div class="column">this is column green </div>
         </div>
         <div class="row">
           <div class="column">
-            <p>this is column red</p>
+            <div className="photography">
+              <p>
+                <center>SCHOOL OF MUSIC</center>
+              </p>
+              <p>
+                <button>
+                  <Link to="/login">Book Appointment</Link>
+                </button>
+              </p>
+              <div>
+                <ReactTable
+                  data={musicData}
+                  columns={columns}
+                  defaultPageSize={8}
+                />
+              </div>
+            </div>
           </div>
           <div class="column">this is column event management </div>
         </div>
         <div class="row">
           <div class="column">
-            <p>this is column advertisement</p>
+            <div className="photography">
+              <p>
+                <center>ADVERTISEMENT</center>
+              </p>
+              <p>
+                <button>
+                  <Link to="/login">Book Appointment</Link>
+                </button>
+              </p>
+              <div>
+                <ReactTable
+                  data={advertisementData}
+                  columns={columns}
+                  defaultPageSize={8}
+                />
+              </div>
+            </div>
           </div>
           <div class="column">this is column blue </div>
         </div>
+        <div class="row">
+          <div className="row5"></div>
+          <div class="column">
+            <div className="photography">
+              <p>
+                <center>EVENT MANAGEMENT</center>
+              </p>
+              <p>
+                <button>
+                  <Link to="/login">Book Appointment</Link>
+                </button>
+              </p>
+              <div>
+                <ReactTable data={eventData} columns={eventColumns} defaultPageSize={8} />
+              </div>
+            </div>
+          </div>
+          <div class="column">this is column video and audio </div>
+        </div>
         <div />
         <div />
-      </div>{" "}
+      </div>
     </div>
   );
 }
