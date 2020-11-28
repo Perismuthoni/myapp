@@ -4,6 +4,7 @@ import axios from 'axios';
 import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../constants/apiConstants';
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "../static/Login.css";
 
 function Login(props) {
     const [state , setState] = useState({
@@ -56,57 +57,73 @@ function Login(props) {
         props.updateTitle('Register');
     }
     return (
-      <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-        <form>
-          <div className="form-group text-left">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-              value={state.email}
-              onChange={handleChange}
-            />
-            <small id="emailHelp" className="form-text text-muted">
-              We'll never share your email with anyone else.
-            </small>
+      <>
+        <div className="login">
+          <div className="row">
+            <div className="column">
+              <div className="card col-lg-4 login-card mt-2 hv-center">
+                <form className="card">
+                  <div className="form-group text-center">
+                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      value={state.email}
+                      onChange={handleChange}
+                    />
+                    <small id="emailHelp" className="form-text text-muted">
+                      We'll never share your email with anyone else.
+                    </small>
+                  </div>
+                  <div className="form-group text-left">
+                    <label htmlFor="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="password"
+                      placeholder="Password"
+                      value={state.password}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-check"></div>
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                    onClick={handleSubmitClick}
+                  >
+                    LOGIN
+                  </button>
+                </form>
+                <div
+                  className="alert alert-success mt-2"
+                  style={{ display: state.successMessage ? "block" : "none" }}
+                  role="alert"
+                >
+                  {state.successMessage}
+                </div>
+                <div className="registerMessage">
+                  <span>Don't have an account? </span>
+                  <span
+                    className="loginText"
+                    onClick={() => redirectToRegister()}
+                  >
+                    <Link to="/register">Register</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="form-group text-left">
-            <label htmlFor="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              className="form-control"
-              id="password"
-              placeholder="Password"
-              value={state.password}
-              onChange={handleChange}
-            />
+          <div className="row">
+            Seedtonic is a talent nurturing platform created to support youths
+            who are gifted and talented but lack the necessary resources to
+            build their talents
           </div>
-          <div className="form-check"></div>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={handleSubmitClick}
-          >
-            LOGIN
-          </button>
-        </form>
-        <div
-          className="alert alert-success mt-2"
-          style={{ display: state.successMessage ? "block" : "none" }}
-          role="alert"
-        >
-          {state.successMessage}
         </div>
-        <div className="registerMessage">
-          <span>Don't have an account? </span>
-          <span className="loginText" onClick={() => redirectToRegister()}>
-            <Link to="/register">Register</Link>
-          </span>
-        </div>
-      </div>
+      </>
     );
 }
 

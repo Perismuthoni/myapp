@@ -235,126 +235,125 @@ function Services() {
    
     
   return (
-    <div>
-      <div className="container">
-        <div class="row">
-          <p>
-            <b>
-              <center>OUR PRODUCTS</center>
-            </b>
-          </p>
-        </div>
-        <div class="row">
-          <div className="row1"></div>
-          <div class="column">
-            <div className="photography">
-              <p>
-                <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
-              </p>
-              <p>
-                <button>
-                  <Link to="/login">Book Appointment</Link>
-                </button>
-              </p>
-              <div>
-                <ReactTable 
-                data={data} 
-                columns={columns} 
-                defaultPageSize={8} />
-              </div>
-            </div>
-          </div>
-          <div class="column">this is column video and audio </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <div className="photography">
-              <p>
-                <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
-              </p>
-              <p>
-                <button>
-                  <Link to="/login">Book Appointment</Link>
-                </button>
-              </p>
-              <div>
-                <ReactTable
-                  data={audioData}
-                  columns={columns}
-                  defaultPageSize={8}
-                />
-              </div>
-            </div>
-          </div>
-          <div class="column">this is column green </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div className="photography">
-              <p>
-                <center>SCHOOL OF MUSIC</center>
-              </p>
-              <p>
-                <button>
-                  <Link to="/login">Book Appointment</Link>
-                </button>
-              </p>
-              <div>
-                <ReactTable
-                  data={musicData}
-                  columns={columns}
-                  defaultPageSize={8}
-                />
-              </div>
-            </div>
-          </div>
-          <div class="column">this is column event management </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div className="photography">
-              <p>
-                <center>ADVERTISEMENT</center>
-              </p>
-              <p>
-                <button>
-                  <Link to="/login">Book Appointment</Link>
-                </button>
-              </p>
-              <div>
-                <ReactTable
-                  data={advertisementData}
-                  columns={columns}
-                  defaultPageSize={8}
-                />
-              </div>
-            </div>
-          </div>
-          <div class="column">this is column blue </div>
-        </div>
-        <div class="row">
-          <div className="row5"></div>
-          <div class="column">
-            <div className="photography">
-              <p>
-                <center>EVENT MANAGEMENT</center>
-              </p>
-              <p>
-                <button>
-                  <Link to="/login">Book Appointment</Link>
-                </button>
-              </p>
-              <div>
-                <ReactTable data={eventData} columns={eventColumns} defaultPageSize={8} />
-              </div>
-            </div>
-          </div>
-          <div class="column">this is column video and audio </div>
-        </div>
-        <div />
-        <div />
+    <div className="services">
+      <div class="row">
+        <p>
+          <b>
+            <center>OUR PRODUCTS</center>
+          </b>
+        </p>
       </div>
+      <div class="row">
+        <div className="row1"></div>
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
+            </p>
+            <p>
+              <button className="button">
+                <Link to="/login">Book Appointment</Link>
+              </button>
+            </p>
+            <div>
+              <ReactTable data={data} columns={columns} defaultPageSize={8} />
+            </div>
+          </div>
+        </div>
+        <div class="column">this is column video and audio </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
+            </p>
+            <p>
+              <button className="button">
+                <Link to="/login">Book Appointment</Link>
+              </button>
+            </p>
+            <div>
+              <ReactTable
+                data={audioData}
+                columns={columns}
+                defaultPageSize={8}
+              />
+            </div>
+          </div>
+        </div>
+        <div class="column">this is column green </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>SCHOOL OF MUSIC</center>
+            </p>
+            <p>
+              <button className="button">
+                <Link to="/login">Book Appointment</Link>
+              </button>
+            </p>
+            <div>
+              <ReactTable
+                data={musicData}
+                columns={columns}
+                defaultPageSize={8}
+              />
+            </div>
+          </div>
+        </div>
+        <div class="column">this is column event management </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>ADVERTISEMENT</center>
+            </p>
+            <p>
+              <button className="button">
+                <Link to="/login">Book Appointment</Link>
+              </button>
+            </p>
+            <div>
+              <ReactTable
+                data={advertisementData}
+                columns={columns}
+                defaultPageSize={8}
+              />
+            </div>
+          </div>
+        </div>
+        <div class="column">this is column blue </div>
+      </div>
+      <div class="row">
+        <div className="row5"></div>
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>EVENT MANAGEMENT</center>
+            </p>
+            <p>
+              <button className="button">
+                <Link to="/login">Book Appointment</Link>
+              </button>
+            </p>
+            <div>
+              <ReactTable
+                data={eventData}
+                columns={eventColumns}
+                defaultPageSize={8}
+              />
+            </div>
+          </div>
+        </div>
+        <div class="column">this is column video and audio </div>
+      </div>
+      <div />
+      <div />
     </div>
   );
 }

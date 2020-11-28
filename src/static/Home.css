@@ -11,8 +11,9 @@ a {
     padding-bottom: 10px;
 }
 .logo {
-    height: 100px;
+    height: 90px;
     width: 100px;
+    background-color: black;
 }
 .image {
     height: 200px;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import {FacebookShareButton, FacebookIcon,
   EmailShareButton, EmailIcon,
   LinkedinShareButton, LinkedinIcon,
@@ -10,6 +10,14 @@ import {FacebookShareButton, FacebookIcon,
 } from "react-share";
 
 import "bootstrap/dist/css/bootstrap.css";
+import {
+  Button,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+} from "react-bootstrap";
 import "../static/Home.css"; 
 import logo from "../images/logo.png";
 
@@ -18,18 +26,39 @@ class Root extends React.Component {
   render() {
     return (
       <>
-        <nav className="navbar">
-          <Link to="#">
+        <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="#home">
             <img alt="logo" className="logo" src={logo} />
-          </Link>
-          <Link to="/home">HOME</Link>
-          <Link to="/services">STUDIO</Link>
-          <Link to="/events">EVENTS</Link>
-          <Link to="/appointment">BOOK APPOINTMENT</Link>
-          <Link to="/gallery">GALLERY</Link>
-          <Link to="/about">ABOUT US</Link>
-        </nav>
-        <div class="some-page-wrapper"></div>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <NavDropdown title="MENU" bg="gold" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/home">HOME</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/services">SERVICES</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/events">EVENTS</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/appointment">
+                  BOOK APPOINTMENT{" "}
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/gallery">GALLERY</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/about">ABOUT US</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Form inline>
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className="mr-sm-2"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
         <nav className="navbar fixed-bottom navbar-light" role="navigation">
           <FacebookShareButton
             url={"https://web.facebook.com/SeedTonic/"}

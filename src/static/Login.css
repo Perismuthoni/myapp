@@ -1,0 +1,10 @@
+.login {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72);
+    color: black;
+}
+.card {
+    background-color: #004d7a;
+    height: 100;
+    width: 100;
+    position: sticky;
+}

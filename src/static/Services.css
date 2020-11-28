@@ -1,7 +1,16 @@
-.container {
-    color:gold;
-
+.services {
+    color:black;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72);
+   ;
+   
 }
-.photography {
-    background-color: rgb(214, 52, 52);
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: rgba(7, 7, 7, 0.966);
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
