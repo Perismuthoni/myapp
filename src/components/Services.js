@@ -3,6 +3,7 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css"; 
 import "../static/Services.css";
 import { Link } from "react-router-dom";
+import photo from "../images/four.jpg";
 
 function Services() {
   
@@ -260,7 +261,35 @@ function Services() {
             </div>
           </div>
         </div>
-        <div class="column">this is column video and audio </div>
+        <div class="column">
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+          <div className="">
+            <center>
+              <img
+                className="photo"
+                src={photo}
+                alt="Logo"
+                height="300px"
+                width="300px"
+              />
+            </center>
+          </div>
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+        </div>
       </div>
 
       <div class="row">
@@ -283,7 +312,36 @@ function Services() {
             </div>
           </div>
         </div>
-        <div class="column">this is column green </div>
+        <div class="column">
+          {" "}
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+          <div className="">
+            <center>
+              <img
+                className="photo"
+                src={photo}
+                alt="Logo"
+                height="300px"
+                width="300px"
+              />
+            </center>
+          </div>
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>{" "}
+        </div>
       </div>
       <div class="row">
         <div class="column">
@@ -305,7 +363,36 @@ function Services() {
             </div>
           </div>
         </div>
-        <div class="column">this is column event management </div>
+        <div class="column">
+          {" "}
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+          <div className="">
+            <center>
+              <img
+                className="photo"
+                src={photo}
+                alt="Logo"
+                height="300px"
+                width="300px"
+              />
+            </center>
+          </div>
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>{" "}
+        </div>
       </div>
       <div class="row">
         <div class="column">
@@ -327,7 +414,36 @@ function Services() {
             </div>
           </div>
         </div>
-        <div class="column">this is column blue </div>
+        <div class="column">
+          {" "}
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+          <div className="">
+            <center>
+              <img
+                className="photo"
+                src={photo}
+                alt="Logo"
+                height="300px"
+                width="300px"
+              />
+            </center>
+          </div>
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+        </div>
       </div>
       <div class="row">
         <div className="row5"></div>
@@ -350,7 +466,36 @@ function Services() {
             </div>
           </div>
         </div>
-        <div class="column">this is column video and audio </div>
+        <div class="column">
+          {" "}
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>
+          <div className="">
+            <center>
+              <img
+                className="photo"
+                src={photo}
+                alt="Logo"
+                height="300px"
+                width="300px"
+              />
+            </center>
+          </div>
+          <p>
+            In fine art of any media, there are seven basic elements of art.
+            There are also the principles of design, but I will get to that in
+            another post. I learned the elements of art while studying fine arts
+            at Young Harris College. While we only applied these to other
+            mediums such as painting, charcoal, and pencil drawing, they are
+            just as applicable to photography
+          </p>{" "}
+        </div>
       </div>
       <div />
       <div />

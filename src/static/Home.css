@@ -1,6 +1,7 @@
-a {
-    color: #FFF;
+.home {
+    background-color: black;
 }
+
 .navbar {
     background-color:black;
     
@@ -17,23 +18,14 @@ a {
 }
 .image {
     height: 200px;
-    width: 350px;
+    width: 500px;
 }
 .waveimage {
     height: 50;
-    width: 350;
+    width: 500px;
 }
-.icon-container {
-   content: icon;
-   shape-image-threshold: initial;
-   list-style-position: inside;
 
-}
-.some-page-wrapper {
-    margin: 0px;
-    background-color:black;
-    height: 400;
-}
+
 
 .row {
     display: flex;
@@ -49,17 +41,20 @@ a {
     flex: 1;
 }
 
-.blue-column {
-    background-color:black;
+.slide {
     height: 450px;
+    width: 450px;
 }
 
 .green-column {
-    background-color:black;
+   
     color: gold;
     height: 450px;
     text-decoration-color: gold;
     -moz-text-decoration-color: gold;
+}
+.some-page-wrapper {
+ background-color: black;
 }
 
 

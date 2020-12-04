@@ -33,7 +33,7 @@ class Root extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavDropdown title="MENU" bg="gold" id="basic-nav-dropdown">
+              <NavDropdown title="CUSTOMER MENU" bg="gold" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/home">HOME</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/services">SERVICES</NavDropdown.Item>
@@ -41,13 +41,46 @@ class Root extends React.Component {
                 <NavDropdown.Item href="/events">EVENTS</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/appointment">
-                  BOOK APPOINTMENT{" "}
+                  BOOK APPOINTMENT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/gallery">GALLERY</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/about">ABOUT US</NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown title="PHOTOGRAPHER'S MENU" bg="gold" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/home">HOME</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/services">LEAVE REVIEW</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/gallery">OUR TEAM</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Item>
+                <FacebookShareButton
+                  url={"https://web.facebook.com/SeedTonic/"}
+                  quote={"Seedtonic -The home of talents"}
+                  hashtag="#SEEDTONIC"
+                />
+                <FacebookIcon size={36} />
+              </Nav.Item>
+              <Nav.Item>
+                <TwitterShareButton url={"https://twitter.com/SeedTonic"} />
+                <TwitterIcon size={36} />
+              </Nav.Item>
+              <Nav.Item>
+                <WhatsappShareButton url={"0701103"} />{" "}
+                <WhatsappIcon size={36} />
+              </Nav.Item>
+              <Nav.Item>
+                <LinkedinShareButton
+                  url={"https://www.linkedin.com/in/seed-tonic-5a53481a3/"}
+                />
+                <LinkedinIcon size={36} />
+              </Nav.Item>
+              <Nav.Item>
+                <EmailShareButton url={"hey"} />
+                <EmailIcon size={36} />
+              </Nav.Item>
             </Nav>
             <Form inline>
               <FormControl
@@ -59,23 +92,6 @@ class Root extends React.Component {
             </Form>
           </Navbar.Collapse>
         </Navbar>
-        <nav className="navbar fixed-bottom navbar-light" role="navigation">
-          <FacebookShareButton
-            url={"https://web.facebook.com/SeedTonic/"}
-            quote={"Seedtonic -The home of talents"}
-            hashtag="#SEEDTONIC"
-          />
-          <FacebookIcon size={36} />
-          <TwitterShareButton url={"https://twitter.com/SeedTonic"} />
-          <TwitterIcon size={36} />
-          <WhatsappShareButton url={"0701103"} /> <WhatsappIcon size={36} />
-          <LinkedinShareButton
-            url={"https://www.linkedin.com/in/seed-tonic-5a53481a3/"}
-          />{" "}
-          <LinkedinIcon size={36} />
-          <EmailShareButton url={"hey"} />
-          <EmailIcon size={36} />
-        </nav>
       </>
     );
   }

@@ -11,3 +11,12 @@
 [1127/060140.962:ERROR:settings.cc(320)] Settings magic is not 1129342067
 [1127/061141.245:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1127/114426.319:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1201/214619.648:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1202/001904.103:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1202/001904.220:ERROR:exception_snapshot_win.cc(99)] thread ID 7628 not found in process
+[1202/223555.864:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1203/010123.328:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1203/010123.303:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1203/010123.351:ERROR:exception_snapshot_win.cc(99)] thread ID 4060 not found in process
+[1203/010123.352:ERROR:exception_snapshot_win.cc(99)] thread ID 7472 not found in process
+[1203/194709.937:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
