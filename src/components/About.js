@@ -18,7 +18,7 @@ class About extends React.Component {
     return (
       <>
         <div className="App">
-          <p>Contact Me</p>
+          <p>Leave a Message</p>
           <div>
             <form action="#" >
   <label>First Name</label>
@@ -26,20 +26,16 @@ class About extends React.Component {
     value={this.state.fname}
     onChange={e => this.setState({ fname: e.target.value })}
   />
-  <label>Last Name</label>
+  <label>Last Name</label><br/>
   <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
     value={this.state.lname}
     onChange={e => this.setState({ lname: e.target.value })}
-  />
-
-
+  /><br/>
   <label>Email</label>
   <input type="email" id="email" name="email" placeholder="Your email"
     value={this.state.email}
     onChange={e => this.setState({ email: e.target.value })}
   />
-
-
   <label>Message</label>
   <textarea id="message" name="message" placeholder="Write something.."
     onChange={e => this.setState({ message: e.target.value })}

@@ -1,30 +1,36 @@
 import React from "react";
 
+
 //import { Link } from "react-router-dom";
 import "../static/Profile.css";
    
   
 
 function Profile() { 
+  
     
   return (
     <>
       <div className="profile">
         <form className="form">
-          <h4>
-            <center>Please fill the following to book appointment</center>
-          </h4>
+          <center>
+            <u>Photograpy & Videograpy Appointment Form</u>
+          </center>
           <div>
-            <p>Enter your full name:</p>
+            <p>First Name:</p>
             <input type="text" />
-          </div>
-          <div>
-            <p>phone number:</p>
+            <p>Last Name:</p>
+            <input type="text" />
+            <p>email:</p>
+            <input type="email" />
+            <p>Phone Number:</p>
             <input type="tel" />
           </div>
           <div>
-            <p>email:</p>
-            <input type="email" />
+            <label for="service">select service:</label>
+            <select id="service" name="service">
+        
+            </select>
           </div>
           <div>
             <label for="service">select service:</label>
@@ -81,7 +87,7 @@ function Profile() {
           <p>
             THANK YOU,
             <br />
-            You will receive a confirmation code 
+            You will receive a confirmation code
           </p>
         </div>
       </div>

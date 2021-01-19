@@ -21,9 +21,7 @@ import {
 import "../static/Home.css"; 
 import logo from "../images/logo.png";
 
-
-class Root extends React.Component {
-  render() {
+function Root() { 
     return (
       <>
         <Navbar bg="light" expand="lg">
@@ -33,28 +31,32 @@ class Root extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavDropdown title="CUSTOMER MENU" bg="gold" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/home">HOME</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services">SERVICES</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/events">EVENTS</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/appointment">
-                  BOOK APPOINTMENT
+              <Nav.Link href="/home">HOME</Nav.Link>
+              <NavDropdown title="SERVICES" bg="gold" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/photography">
+                  Photography & Videography
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/gallery">GALLERY</NavDropdown.Item>
+                <NavDropdown.Item href="/audio">
+                  Audio Recording
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/about">ABOUT US</NavDropdown.Item>
+                <NavDropdown.Item href="/music">
+                  School of Music
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/advertisement">
+                  Advertisement
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/emanagement">
+                  Event Management
+                </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="PHOTOGRAPHER'S MENU" bg="gold" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/home">HOME</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services">LEAVE REVIEW</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/gallery">OUR TEAM</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/appointment">MY PROFILE</Nav.Link>
+              <Nav.Link href="/events">EVENTS</Nav.Link>
+              <Nav.Link href="/gallery">GALLERY</Nav.Link>
+              <Nav.Link href="/about">ABOUT US</Nav.Link>
               <Nav.Item>
                 <FacebookShareButton
                   url={"https://web.facebook.com/SeedTonic/"}
@@ -94,6 +96,5 @@ class Root extends React.Component {
         </Navbar>
       </>
     );
-  }
-}
+    }
 export default Root;
