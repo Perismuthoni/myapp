@@ -20,16 +20,16 @@ function Photography() {
       accessor: "price",
     },
   ];
-  const [audioData, setAudioState] = useState([]);
-  const getAudioData = () => {
+  const [photographyData, setPhotographyState] = useState([]);
+  const getPhotographyData = () => {
     return fetch("http://127.0.0.1:5000/api/music").then((res) =>
       res.json()
     );
   };
   useEffect(() => {
-    getAudioData().then((resp) => {
-      const data = resp.audio;
-      setAudioState(data);
+    getPhotographyData().then((resp) => {
+      const data = resp.Photography;
+      setPhotographyState(data);
     });
   });
 
@@ -48,7 +48,7 @@ function Photography() {
             </p>
             <div>
               <ReactTable
-                data={audioData}
+                data={photographyData}
                 columns={columns}
                 defaultPageSize={8}
               />

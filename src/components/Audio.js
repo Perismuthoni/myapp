@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 import "../static/Services.css";
@@ -20,49 +20,18 @@ function Audio() {
       accessor: "price",
     },
   ];
-  const audioData = [
-    {
-      name: "Photography",
-      package: "unlimited",
-      price: 26,
-    },
-    {
-      name: "Photography",
-      package: "one photo",
-      price: 26,
-    },
-    {
-      name: "Photography",
-      package: "economic",
-      price: 26,
-    },
-    {
-      name: "Photography",
-      package: "unlimited(event)",
-      price: 26,
-    },
-    {
-      name: "Videography",
-      package: "single",
-      price: 26,
-    },
-    {
-      name: "Photography",
-      package: "album",
-      price: 26,
-    },
-    {
-      name: "School of Photography",
-      package: "album",
-      price: 26,
-    },
-    {
-      name: "School of videography",
-      package: "album",
-      price: 26,
-    },
-  ];
-
+  const [audioData, setAudioState] = useState([]);
+  const getAudioData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getAudioData().then((resp) => {
+      const data = resp.audio;
+      setAudioState(data);
+    });
+  });
   return (
     <div className="services">
       <div class="row">
