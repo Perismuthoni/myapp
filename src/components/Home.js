@@ -34,6 +34,10 @@ function Home() {
                   reflected sound echoes that could otherwise interfere with the
                   sound heard by the listener).
                 </p>
+                <br></br><br></br><br></br>
+                <div> <center><a href="/register">Don't have an account<button><b>REGISTER</b></button></a></center></div>
+                <div> <center><a href="/login">Already have an account<button><b>LOGIN</b></button></a></center></div>
+                
               </div>
             </div>
           </div>

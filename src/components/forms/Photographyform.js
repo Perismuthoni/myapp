@@ -1,12 +1,9 @@
 import React from "react";
-
-
-//import { Link } from "react-router-dom";
-import "../static/forms.css";
+import "../../static/forms.css";
    
   
 
-function Profile() { 
+function Photographyform() { 
   
     
   return (
@@ -95,4 +92,4 @@ function Profile() {
   );
 }
 
-  export default Profile;
+  export default Photographyform;

@@ -1,14 +1,6 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import {FacebookShareButton, FacebookIcon,
-  EmailShareButton, EmailIcon,
-  LinkedinShareButton, LinkedinIcon,
-  WhatsappShareButton, WhatsappIcon,
-  TwitterShareButton, TwitterIcon, 
-  //InstagramShareButton, InstagramIcon,
- // YoutubeShareButton, YoutubeIcon
-} from "react-share";
-
+import { Facebook,Instagram,Linkedin,Whatsapp,Twitter, Mailbox} from 'react-bootstrap-icons';
 import "bootstrap/dist/css/bootstrap.css";
 import {
   Button,
@@ -20,6 +12,7 @@ import {
 } from "react-bootstrap";
 import "../static/Home.css"; 
 import logo from "../images/logo.png";
+
 
 function Root() { 
     return (
@@ -45,6 +38,10 @@ function Root() {
                   School of Music
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
+                <NavDropdown.Item href="/video">
+                  School of Photography & Videography
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="/advertisement">
                   Advertisement
                 </NavDropdown.Item>
@@ -58,30 +55,22 @@ function Root() {
               <Nav.Link href="/gallery">GALLERY</Nav.Link>
               <Nav.Link href="/about">ABOUT US</Nav.Link>
               <Nav.Item>
-                <FacebookShareButton
-                  url={"https://web.facebook.com/SeedTonic/"}
-                  quote={"Seedtonic -The home of talents"}
-                  hashtag="#SEEDTONIC"
-                />
-                <FacebookIcon size={36} />
+                <a href="https://web.facebook.com/SeedTonic/"><button className="icon-i"> <Instagram/></button></a>              
               </Nav.Item>
               <Nav.Item>
-                <TwitterShareButton url={"https://twitter.com/SeedTonic"} />
-                <TwitterIcon size={36} />
+                <a href="https://web.facebook.com/SeedTonic/"><button className="icon-f"><Facebook/></button></a>              
               </Nav.Item>
               <Nav.Item>
-                <WhatsappShareButton url={"0701103"} />{" "}
-                <WhatsappIcon size={36} />
+                <a href="https://twitter.com/SeedTonic"><button className="icon-t"><Twitter/></button></a>                
               </Nav.Item>
               <Nav.Item>
-                <LinkedinShareButton
-                  url={"https://www.linkedin.com/in/seed-tonic-5a53481a3/"}
-                />
-                <LinkedinIcon size={36} />
+                <a href="Tel:070103297"><button className="icon-w"><Whatsapp/></button></a>                
               </Nav.Item>
               <Nav.Item>
-                <EmailShareButton url={"hey"} />
-                <EmailIcon size={36} />
+                <a href="https://www.linkedin.com/in/seed-tonic-5a53481a3/"><button className="icon-l"><Linkedin/></button></a>              
+              </Nav.Item>              
+              <Nav.Item>
+                <a href="mailto:seedtonic@gmail.com"><button className="icon-m"><Mailbox/></button></a>                
               </Nav.Item>
             </Nav>
             <Form inline>

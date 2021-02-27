@@ -5,7 +5,7 @@ import "../static/Services.css";
 import { Link } from "react-router-dom";
 import photo from "../images/sample.jpg";
 
-function Emanagement() {
+function Video() {
   const columns = [
     {
       Header: "Service",
@@ -20,16 +20,16 @@ function Emanagement() {
       accessor: "price",
     },
   ];
-  const [audioData, setAudioState] = useState([]);
-  const getAudioData = () => {
-    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+  const [videoData, setVideoState] = useState([]);
+  const getVideoData = () => {
+    return fetch("http://127.0.0.1:5000/api/services").then((res) =>
       res.json()
     );
   };
   useEffect(() => {
-    getAudioData().then((resp) => {
+    getVideoData().then((resp) => {
       const data = resp.audio;
-      setAudioState(data);
+      setVideoState(data);
     });
   });
 
@@ -39,7 +39,7 @@ function Emanagement() {
         <div class="column">
           <div className="photography">
             <p>
-              <center>EVENT MANAGEMENT</center>
+              <center>SCHOOL OF VIDEOGRAPHY</center>
             </p>
             <p>
               <button className="button">
@@ -48,7 +48,7 @@ function Emanagement() {
             </p>
             <div>
               <ReactTable
-                data={audioData}
+                data={videoData}
                 columns={columns}
                 defaultPageSize={8}
               />
@@ -90,4 +90,4 @@ function Emanagement() {
   );
 }
 
-export default Emanagement;
+export default Video;

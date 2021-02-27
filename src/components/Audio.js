@@ -3,7 +3,7 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 import "../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/four.jpg";
+import photo from "../images/sample.jpg";
 
 function Audio() {
   const columns = [

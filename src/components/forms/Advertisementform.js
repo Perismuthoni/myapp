@@ -1,12 +1,10 @@
 import React from "react";
-
-
 //import { Link } from "react-router-dom";
-import "../static/forms.css";
+import "../../static/forms.css";
    
   
 
-function Profile() { 
+function Advertisementform() { 
   
     
   return (
@@ -14,7 +12,7 @@ function Profile() {
       <div className="profile">
         <form className="form">
           <center>
-            <u>Photograpy & Videograpy Appointment Form</u>
+            <u>Advertisement form</u>
           </center>
           <div>
             <p>First Name:</p>
@@ -95,4 +93,4 @@ function Profile() {
   );
 }
 
-  export default Profile;
+  export default Advertisementform;

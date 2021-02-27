@@ -1,51 +1,61 @@
-import React from "react";
-import one from "../images/one.jpg";
-import two from "../images/two.jpg";
-import three from "../images/three.jpg";
-import four from "../images/four.jpg";
-import five from "../images/five.jpg";
-import six from "../images/six.jpg";
+import React, { useState, useEffect } from "react";
+import ReactTable from "react-table-6";
+import "react-table-6/react-table.css";
+import "../static/Gallery.css";
+//import { Link } from "react-router-dom";
+import { Facebook,Instagram,} from 'react-bootstrap-icons';
+//import photo from "../images/sample.jpg";
 
 function Gallery() {
+  const columns = [
+    {
+      Header: "images",
+      accessor: "name",
+    },
+    {
+      Header: "images",
+      accessor: "package",
+    },
+    
+  ];
+  const [advertisementData,setAdvertisementState] = useState([]);
+  const getAdvertisementData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getAdvertisementData().then((resp) => {
+      const data = resp.advertisement;
+      setAdvertisementState(data);
+    });
+  });
+
   return (
-    <>
-      <div class="some-page-wrapper">
-        <div class="row">
-          <div class="column">
-            <div class="orange-column">
-              <img src={one} alt="Logo" width="500" height="450" />
+    <div className="services">
+      <div class="row">
+        <div class="column">
+          <div className="photography">
+            <p>
+              <center>SEEDTONIC PHOTOGRAPHY</center>
+            </p>
+            <p>              
+                <a href="/login" ><button class="icon-i"><Instagram /></button></a>
+                <a href="/login"  ><button class="icon-f"><Facebook /></button></a>
+            </p>
+            <div>
+              <ReactTable
+                data={advertisementData}
+                columns={columns}
+                defaultPageSize={8}
+              />
             </div>
-          </div>
-          <div class="column">
-            <div class="blue-column">
-              <img src={two} alt="Logo" width="500" height="450" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="green-column">
-              <img src={three} alt="Logo" />
-            </div>
-          </div>
-        </div>
-        <div class="row 2">
-          <div class="column">
-            <div class="green-column">
-              <img src={four} alt="Logo" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="orange-column">
-              <img src={five} alt="Logo" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="blue-column">
-              <img src={six} alt="Logo" />
-            </div>
+
           </div>
         </div>
+        
       </div>
-    </>
+    </div>
   );
 }
 
