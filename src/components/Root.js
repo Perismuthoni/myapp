@@ -17,15 +17,13 @@ import logo from "../images/logo.png";
 function Root() { 
     return (
       <>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">
-            <img alt="logo" className="logo" src={logo} />
-          </Navbar.Brand>
+        <Navbar className="navbar" expand="lg">
+          <img alt="logo" className="logo" src={logo} />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+         
+            {/* <Nav className="nav"> */}
               <Nav.Link href="/home">HOME</Nav.Link>
-              <NavDropdown title="SERVICES" bg="gold" id="basic-nav-dropdown">
+              <NavDropdown title="SERVICES">
                 <NavDropdown.Item href="/photography">
                   Photography & Videography
                 </NavDropdown.Item>
@@ -50,10 +48,10 @@ function Root() {
                   Event Management
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/appointment">MY PROFILE</Nav.Link>
+              <Nav.Link href="/profile">PROFILE</Nav.Link>
               <Nav.Link href="/events">EVENTS</Nav.Link>
               <Nav.Link href="/gallery">GALLERY</Nav.Link>
-              <Nav.Link href="/about">ABOUT US</Nav.Link>
+              <Nav.Link href="/about">CONTACT US</Nav.Link>
               <Nav.Item>
                 <a href="https://web.facebook.com/SeedTonic/"><button className="icon-i"> <Instagram/></button></a>              
               </Nav.Item>
@@ -62,18 +60,15 @@ function Root() {
               </Nav.Item>
               <Nav.Item>
                 <a href="https://twitter.com/SeedTonic"><button className="icon-t"><Twitter/></button></a>                
-              </Nav.Item>
-              <Nav.Item>
-                <a href="Tel:070103297"><button className="icon-w"><Whatsapp/></button></a>                
-              </Nav.Item>
+              </Nav.Item>          
               <Nav.Item>
                 <a href="https://www.linkedin.com/in/seed-tonic-5a53481a3/"><button className="icon-l"><Linkedin/></button></a>              
               </Nav.Item>              
               <Nav.Item>
                 <a href="mailto:seedtonic@gmail.com"><button className="icon-m"><Mailbox/></button></a>                
               </Nav.Item>
-            </Nav>
-            <Form inline>
+            {/* </Nav> */}
+            <Form inline className="form">
               <FormControl
                 type="text"
                 placeholder="Search"
@@ -81,8 +76,9 @@ function Root() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-          </Navbar.Collapse>
-        </Navbar>
+            </Navbar>
+            <div className="marquee"><b> <marquee> HOME OF TALENT</marquee></b></div>
+            <a href="https://wa.me/254701103297"><button className="whatsapp"><Whatsapp/></button></a>  
       </>
     );
     }

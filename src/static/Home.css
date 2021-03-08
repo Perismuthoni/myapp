@@ -1,10 +1,27 @@
 .home {
-    background-color: black;
-}
+    background-color: goldenrod;
+}a:link {
+    color: gold;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: gold;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: green;
+  }
+  
+  /* selected link */
+  a:active {
+    color: green;
+  }
 
 .navbar {
-    background-color:black;
-    
+    background-color:black; 
+    color: gold;  
     height: 10;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium';
@@ -13,8 +30,7 @@
 }
 .logo {
     height: 90px;
-    width: 100px;
-    background-color: black;
+    width: 110px;
 }
 .image {
     height: 200px;
@@ -54,32 +70,71 @@
     -moz-text-decoration-color: gold;
 }
 .some-page-wrapper {
- background-color: black;
+ background-color:gray;
 }
 .icon-f {
     background-color: blue;
+    border-radius: 50px;
     font-size: larger;
 }
 .icon-w {
     background-color: green;
+    border-radius: 50px;
     font-size: larger;
 }
 .icon-t {
     background-color: skyblue;
+    border-radius: 50px;
     font-size: larger;
 
 }
 .icon-i {
     background-color: orange;
+    border-radius: 50px;
     font-size: larger;
 }
 .icon-l {
     background-color: skyblue;
+    border-radius: 50px;
     font-size: larger;
 }
 .icon-m {
     background-color: red;
+    border-radius: 50px;
     font-size: larger;
 }
+.marquee {
+    background-color: black;
+    color: gold;
+}
+.form {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 0px;
+}
     
-    
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+@media screen and (max-width: 767px) {
+        .whatsapp {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}

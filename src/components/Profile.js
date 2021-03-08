@@ -1,95 +1,63 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import  { useState } from 'react';
+
 
 
 //import { Link } from "react-router-dom";
-import "../static/forms.css";
+import "../static/Profile.css";
    
   
 
 function Profile() { 
-  
-    
+
+  const [{alt, src}, setImg] = useState({
+    // src: placeholder,
+    alt: 'Upload an Image'
+});
+  const handleImg = (e) => {
+    if(e.target.files[0]) {
+      setImg({
+          src: URL.createObjectURL(e.target.files[0]),
+          alt: e.target.files[0].name
+      });
+    }}
   return (
     <>
-      <div className="profile">
-        <form className="form">
-          <center>
-            <u>Photograpy & Videograpy Appointment Form</u>
-          </center>
-          <div>
-            <p>First Name:</p>
-            <input type="text" />
-            <p>Last Name:</p>
-            <input type="text" />
-            <p>email:</p>
-            <input type="email" />
-            <p>Phone Number:</p>
-            <input type="tel" />
-          </div>
-          <div>
-            <label for="service">select service:</label>
-            <select id="service" name="service">
-        
-            </select>
-          </div>
-          <div>
-            <label for="service">select service:</label>
-            <select id="service" name="service">
-              <option value="photography">studio photography</option>
-              <option value="photography">outdoor photography</option>
-              <option value="audio">Audio recording</option>
-              <option value="audio">outdoor videography</option>
-            </select>
-          </div>
-          <div>
-            <label for="package">Select package</label>
-            <select id="package" name="package">
-              <option value="photography">single</option>
-              <option value="photography">economic</option>
-              <option value="photography">unlimited</option>
-            </select>
-          </div>
-          <div>
-            <p>
-              <label for="date">Select date</label>
-            </p>
-            <input type="date" />
-          </div>
-          <div>
-            <label for="session">Select session</label>
-            <select id="session" name="session">
-              <option value="photography">0600hrs-0900hr</option>
-              <option value="photography">0800hrs-1000hr</option>
-              <option value="photography">1100hrs-1300hr</option>
-              <option value="photography">0900hrs-1200hr</option>
-              <option value="photography">1400hrs-1700hr</option>
-              <option value="photography">1600hrs-1900hr</option>
-            </select>
-          </div>
-          <div>
-            <label for="confirm">receive confirmation code by</label>
-            <br />
-            <input type="radio" value="Male" name="gender" /> email
-            <input type="radio" value="Female" name="gender" /> SMS
-          </div>
-          <div>
-            <input type="submit" />
-          </div>
+
+<form encType="multipart/form-data">
+            <h1 className="form__title">User Name</h1>
+            <div className="form__img-input-container">
+                <input 
+                    type="file" 
+                    accept=".png, .jpg, .jpeg" 
+                    id="photo" 
+                    className="visually-hidden"
+                     onChange={handleImg}
+
+                />
+                <label htmlFor="photo" className="form-img__file-label">
+                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#56ceef" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" />
+                        <circle cx="12" cy="10" r="3" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                </label>
+                <img src={src} alt={alt} className="form-img__img-preview"/>
+            </div>
         </form>
-        <div>
-          <p>
-            THANK YOU,
-            <br />
-            You will receive a confirmation
-          </p>
+      <div className="profile">
+        <div className="info">
+          
         </div>
-        <div>
-          <p>
-            THANK YOU,
-            <br />
-            You will receive a confirmation code
-          </p>
-        </div>
+
+
+
+
+      <Link to="/register">Register</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/profile">user profile</Link>
+        
       </div>
     </>
   );
