@@ -78,7 +78,7 @@ function Root() {
             </Form>
             </Navbar>
             <div className="marquee"><b> <marquee> HOME OF TALENT</marquee></b></div>
-            <a href="https://wa.me/254701103297"><button className="whatsapp"><Whatsapp/></button></a>  
+            <a href="https://wa.me/254710424010"><button className="whatsapp"><Whatsapp/></button></a>  
       </>
     );
     }
