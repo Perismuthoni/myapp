@@ -6,9 +6,21 @@
     max-width: 420px;
     margin: 0 auto;
 }
+.message {
+    color: goldenrod;
+    background-position: left;
+   
+}
+.column {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
 
 p {
-    text-align: center;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -41,6 +53,6 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #af2d2d;
     padding: 20px;
 }

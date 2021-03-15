@@ -33,7 +33,8 @@ class App extends React.Component {
     return (
       <>
       <div className="page">
-        <Router>
+        <Router > 
+        {/* basename="/home"      */}
           <Route path={"/"} component={Root} /> 
           <Route path={"/home"} component={Home} />
           <Route path={"/events"} component={Events} />
@@ -58,6 +59,7 @@ class App extends React.Component {
           <Route path={"/emanagementform"} component={Emanagementform} />
 
         </Router>
+        <div><p><b> Developed by Peris Muthoni Email:muthonimuriuki22@gmail.com </b></p></div>
         </div>
       </>
     );

@@ -1,47 +1,85 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+
 import "../static/Home.css";
-import root from "../images/root.jpg";
-import wave from "../images/wave.jpg";
+
+import { Slide } from 'react-slideshow-image';
+//import SimpleImageSlider from "react-simple-image-slider";
+import 'react-slideshow-image/dist/styles.css'
+import image1 from "../images/image1.jpg";
+import image2 from "../images/image2.jpg";
+import image3 from "../images/image3.jpg";
+ import image4 from "../images/image4.jpg";
+
+
+
 
 
 function Home() {
-
+ 
+  
     return (
       <>
-        <div class="some-page-wrapper">
+       <div className="home" >
           <div class="row">
             <div class="column">
               <div class="blue-column">
-                <img alt="logo" className="waveimage" src={wave} />
-                <img alt="logo" className="image" src={root} />
-                <img alt="logo" className="waveimage" src={wave} />
+
+              <Slide>
+          <div className="each-slide">       
+              <img              
+                src={image1}
+                className="slidephoto"
+                alt="Logo"
+                
+              />
+            </div>
+          
+          <div className="each-slide">            
+              <img              
+                src={image2}
+                className="slidephoto"
+                alt="Logo"
+                
+              />
+          </div>
+          <div className="each-slide">            
+              <img              
+                src={image3}
+                className="slidephoto"
+                alt="Logo"                
+              />            
+          </div>
+          <div className="each-slide">            
+              <img              
+                src={image4}
+                className="slidephoto"
+                alt="Logo"                
+              />            
+          </div>
+        </Slide>
+              
               </div>
             </div>
             <div class="column">
               <div class="green-column">
-                <p>
-                  A recording studio is a specialized facility for sound
-                  recording, mixing, and audio production of instrumental or
-                  vocal musical performances, spoken words, and other sounds.
-                  They range in size from a small in-home project studio large
-                  enough to record a single singer-guitarist, to a large
-                  building with space for a full orchestra of 100 or more
-                  musicians. Ideally both the recording and monitoring
-                  (listening and mixing) spaces are specially designed by an
-                  acoustician or audio engineer to achieve optimum acoustic
-                  properties (acoustic isolation or diffusion or absorption of
-                  reflected sound echoes that could otherwise interfere with the
-                  sound heard by the listener).
-                </p>
-                <br></br><br></br><br></br>
-                <div> <center><a href="/register">Don't have an account<button><b>REGISTER</b></button></a></center></div>
-                <div> <center><a href="/login">Already have an account<button><b>LOGIN</b></button></a></center></div>
-                
-              </div>
+                <br></br>
+                <p><center><b><h3>Hello Our Esteemed Customer</h3></b></center></p>
+                <p><center>
+                  Thank you for visiting our page
+                   click the whatsapp Icon to talk to us
+                  <br></br>
+                  or<br></br>
+                  <a href="tel:254710424010"> <button>click here</button></a> and give us a call
+
+                  </center></p>
+                  <br></br>
+                  <br></br><br></br>
+                                  
+               
+               </div>
             </div>
           </div>
-        </div>
+          </div> 
       </>
     );
 }

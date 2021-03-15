@@ -3,12 +3,9 @@ import React from "react";
 import { Facebook,Instagram,Linkedin,Whatsapp,Twitter, Mailbox} from 'react-bootstrap-icons';
 import "bootstrap/dist/css/bootstrap.css";
 import {
-  Button,
   Navbar,
   Nav,
   NavDropdown,
-  Form,
-  FormControl,
 } from "react-bootstrap";
 import "../static/Home.css"; 
 import logo from "../images/logo.png";
@@ -23,7 +20,7 @@ function Root() {
          
             {/* <Nav className="nav"> */}
               <Nav.Link href="/home">HOME</Nav.Link>
-              <NavDropdown title="SERVICES">
+              <NavDropdown title="SERVICES" className="dropdown-content">
                 <NavDropdown.Item href="/photography">
                   Photography & Videography
                 </NavDropdown.Item>
@@ -67,15 +64,15 @@ function Root() {
               <Nav.Item>
                 <a href="mailto:seedtonic@gmail.com"><button className="icon-m"><Mailbox/></button></a>                
               </Nav.Item>
-            {/* </Nav> */}
-            <Form inline className="form">
+           
+            {/* <Form inline className="form">
               <FormControl
                 type="text"
                 placeholder="Search"
                 className="mr-sm-2"
               />
               <Button variant="outline-success">Search</Button>
-            </Form>
+            </Form> */}
             </Navbar>
             <div className="marquee"><b> <marquee> HOME OF TALENT</marquee></b></div>
             <a href="https://wa.me/254710424010"><button className="whatsapp"><Whatsapp/></button></a>  
