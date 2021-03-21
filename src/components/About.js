@@ -52,6 +52,7 @@ class About extends React.Component {
                  </div>
           </div>
         </div>
+        <div><p><b> Developed by Peris Muthoni Email:muthonimuriuki22@gmail.com </b></p></div>
       </>
     );
   }

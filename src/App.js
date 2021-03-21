@@ -59,7 +59,7 @@ class App extends React.Component {
           <Route path={"/emanagementform"} component={Emanagementform} />
 
         </Router>
-        <div><p><b> Developed by Peris Muthoni Email:muthonimuriuki22@gmail.com </b></p></div>
+       
         </div>
       </>
     );

@@ -74,7 +74,7 @@ function Root() {
               <Button variant="outline-success">Search</Button>
             </Form> */}
             </Navbar>
-            <div className="marquee"><b> <marquee> HOME OF TALENT</marquee></b></div>
+           
             <a href="https://wa.me/254710424010"><button className="whatsapp"><Whatsapp/></button></a>  
       </>
     );
