@@ -20,9 +20,8 @@ function Home() {
     return (
       <>
        <div className="home" >
-          <div class="row">
-            <div class="column">
-              <div class="blue-column">
+                     
+              <div class="row1">
 
               <Slide>
           <div className="each-slide">       
@@ -59,8 +58,7 @@ function Home() {
         </Slide>
               
               </div>
-            </div>
-            <div class="column">
+            
               <div class="green-column">
                 <br></br>
                 <p><center><b><h3>Hello Our Esteemed Customer</h3></b></center></p>
@@ -77,8 +75,7 @@ function Home() {
                                   
                
                </div>
-            </div>
-          </div>
+                     
           </div> 
       </>
     );
