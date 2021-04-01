@@ -4,6 +4,9 @@
     resize: both;
 
 }
+.root{
+    background-color: black;
+}
 .bg {
     width: 100vw;
     background: no-repeat center fixed;     
@@ -33,16 +36,20 @@ a:link {
 .navbar {
     position: static;
     top: 0px;
-   flex-wrap: wrap;
     display: flex;
     background-color:black; 
     color: goldenrod;  
-    height: 10;    
-    -webkit-text-size-adjust: auto;
+    height: fit-content;   
+    text-size-adjust:inherit;
     font-family: 'Franklin Gothic Medium';
-    border: 10px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+    resize: both;
+   
     
+}
+.icons{
+      align-self: center;
+      align-content: center;
+      
 }
 .logo {
     height: 90px;

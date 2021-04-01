@@ -1,5 +1,5 @@
 import React from "react";
-import "../static/About.css";
+import "../static/Contact.css";
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -17,11 +17,11 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <div className="App">
+        <div className="contact">
            
                    
           <div className="message">
-          <p>Leave a Message</p>
+          <p><b>Leave a Message</b></p>
             <form action="#" >
   <label>First Name</label>
   <input type="text" id="fname" name="firstname" placeholder="Your name.."
@@ -29,7 +29,7 @@ class About extends React.Component {
     onChange={e => this.setState({ fname: e.target.value })}
   />
   <label>Last Name</label><br/>
-  <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
+  <input type="text" id="lname" name="lastname" placeholder="Your last name.."
     value={this.state.lname}
     onChange={e => this.setState({ lname: e.target.value })}
   /><br/>
@@ -47,8 +47,9 @@ class About extends React.Component {
 </form >
           </div>
           <br></br>
-          <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.51772455505!2d36.94585181410192!3d-1.4629990362554983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0aa9925d79f9%3A0xfd87c5e946811131!2sNoonkopir%20Girls%20Secondary%20School!5e0!3m2!1sen!2ske!4v1615714003399!5m2!1sen!2ske" width="600" height="450" allowfullscreen="" loading="lazy" title="map"></iframe></div>
-                 </div>
+          <div className="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.51772455505!2d36.94585181410192!3d-1.4629990362554983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0aa9925d79f9%3A0xfd87c5e946811131!2sNoonkopir%20Girls%20Secondary%20School!5e0!3m2!1sen!2ske!4v1615714003399!5m2!1sen!2ske" width="600" height="450" allowfullscreen="" loading="lazy" title="map"></iframe></div>
+          </div>
           
         
 

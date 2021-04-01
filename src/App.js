@@ -11,7 +11,7 @@ import Events from "./components/Events";
 import Services from "./components/Services";
 import Appointment from "./components/Appointment";
 import Gallery from "./components/Gallery";
-import About from "./components/About";
+import About from "./components/Contact";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Profile  from "./components/Profile";
