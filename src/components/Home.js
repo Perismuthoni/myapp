@@ -22,6 +22,7 @@ function Home() {
        <div className="home" >
                    
               <BackgroundSlider
+                 className="bg"
                  images={[image1, image2, image3,image4]}
                  duration={10} transition={2} />              
          

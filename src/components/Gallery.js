@@ -32,9 +32,7 @@ function Gallery() {
   });
 
   return (
-    <div className="services">
-      <div class="row">
-        <div class="column">
+    
           <div className="photography">
             <p>
               <center>SEEDTONIC PHOTOGRAPHY</center>
@@ -50,12 +48,7 @@ function Gallery() {
                 defaultPageSize={8}
               />
             </div>
-
           </div>
-        </div>
-        
-      </div>
-    </div>
   );
 }
 

@@ -35,16 +35,15 @@ function Music() {
 
   return (
     <div className="services">
-      <div class="row">
-        <div class="column">
+     
           <div className="photography">
             <p>
-              <center>SCHOOL OF MUSIC</center>
-            </p>
-            <p>
+              <center>SCHOOL OF MUSIC
+                <br></br>
               <button className="button">
                 <Link to="/login">Book Appointment</Link>
               </button>
+              </center>
             </p>
             <div>
               <ReactTable
@@ -54,9 +53,6 @@ function Music() {
               />
             </div>
           </div>
-        </div>
-        <div class="column">
-          {" "}
           <p>
             In fine art of any media, there are seven basic elements of art.
             There are also the principles of design, but I will get to that in
@@ -83,9 +79,7 @@ function Music() {
             at Young Harris College. While we only applied these to other
             mediums such as painting, charcoal, and pencil drawing, they are
             just as applicable to photography
-          </p>{" "}
-        </div>
-      </div>
+          </p>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
-import "../static/Services.css";
+//import "../static/Services.css";
 import { Link } from "react-router-dom";
 import photo from "../images/sample.jpg";
 
@@ -35,16 +35,15 @@ function Advertisement() {
 
   return (
     <div className="services">
-      <div class="row">
-        <div class="column">
+     
           <div className="photography">
             <p>
-              <center>PHOTOGRAPHY &VIDEOGRAPHY</center>
-            </p>
-            <p>
-              <button className="button">
-                <Link to="/login">Book Appointment</Link>
+              <center>PHOTOGRAPHY &VIDEOGRAPHY
+                <br></br>
+                <button className="button"> 
+                <Link to="/login"><center>Book Appointment</center></Link>
               </button>
+              </center>
             </p>
             <div>
               <ReactTable
@@ -53,10 +52,8 @@ function Advertisement() {
                 defaultPageSize={8}
               />
             </div>
-          </div>
         </div>
-        <div class="column">
-          {" "}
+        
           <p>
             In fine art of any media, there are seven basic elements of art.
             There are also the principles of design, but I will get to that in
@@ -83,10 +80,8 @@ function Advertisement() {
             at Young Harris College. While we only applied these to other
             mediums such as painting, charcoal, and pencil drawing, they are
             just as applicable to photography
-          </p>{" "}
-        </div>
+          </p>
       </div>
-    </div>
   );
 }
 
