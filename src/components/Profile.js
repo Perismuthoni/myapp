@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  { useState } from 'react';
+import { useState, useEffect } from "react";
+import ReactTable from "react-table-6";
+import "react-table-6/react-table.css";
 
 
 
@@ -10,6 +12,42 @@ import "../static/Profile.css";
   
 
 function Profile() { 
+  const columns = [
+    {
+      Header: "Service",
+      accessor: "name",
+    },
+    {
+      Header: "Package",
+      accessor: "package",
+    },
+    {
+      Header: "price",
+      accessor: "price",
+    },
+    {
+      Header: "Date",
+      accessor: "date",
+    },
+    {
+      Header: "Venue",
+      accessor: "venue",
+    },
+    
+  ];
+  const [profileData, setProfileState] = useState([]);
+  const getProfileData = () => {
+    return fetch("http://127.0.0.1:5000/api/profile").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getProfileData().then((resp) => {
+      const data = resp.Profile;
+      setProfileState(data);
+    });
+  });
+
 
   const [{alt, src}, setImg] = useState({
     // src: placeholder,
@@ -46,6 +84,23 @@ function Profile() {
                 <img src={src} alt={alt} className="form-img__img-preview"/>
             </div>
         </form>
+
+        <div class="cardv">  
+        <center>
+    <h4>myemail@gmail.com</h4>
+    <p> +254701103297 <br></br> </p>
+    </center>
+</div> 
+
+<p> <center><h3>My Appointments</h3></center></p>
+
+ 
+<ReactTable
+                data={profileData}
+                columns={columns}
+                defaultPageSize={4}
+              />
+        
       <div className="profile">
         <div className="info">
           

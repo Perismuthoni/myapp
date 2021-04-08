@@ -3,7 +3,7 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 import "../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/sample.jpg";
+import photo from "../images/Services/sample.jpg";
 
 function Music() {
   const columns = [
@@ -45,7 +45,7 @@ function Music() {
               </button>
               </center>
             </p>
-            <div>
+            <div className="table">
               <ReactTable
                 data={musicData}
                 columns={columns}
@@ -54,12 +54,8 @@ function Music() {
             </div>
           </div>
           <p>
-            In fine art of any media, there are seven basic elements of art.
-            There are also the principles of design, but I will get to that in
-            another post. I learned the elements of art while studying fine arts
-            at Young Harris College. While we only applied these to other
-            mediums such as painting, charcoal, and pencil drawing, they are
-            just as applicable to photography
+          We are determined to make the world a better place by empowering people with talent.
+          we are here to guide you through your music career.
           </p>
           <div className="">
             <center>
@@ -69,6 +65,7 @@ function Music() {
                 alt="Logo"
                 height="300px"
                 width="300px"
+                loading="lazy"
               />
             </center>
           </div>

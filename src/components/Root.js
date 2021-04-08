@@ -1,13 +1,13 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import { Facebook,Instagram,Linkedin,Whatsapp,Twitter, Mailbox} from 'react-bootstrap-icons';
+import { Whatsapp} from 'react-bootstrap-icons';
 import "bootstrap/dist/css/bootstrap.css";
 import {
   Navbar,
   Nav,
   NavDropdown,
 } from "react-bootstrap";
-import "../static/Home.css"; 
+import "../static/Root.css"; 
 import logo from "../images/logo.png";
 
 
@@ -52,15 +52,7 @@ function Root() {
               <Nav.Link href="/about">CONTACT US</Nav.Link>           
             </Navbar>
            
-           <div className="icons">
-             <center>
-           <a href="https://web.facebook.com/SeedTonic/"><button className="icon-i"> <Instagram/></button></a>
-           <a href="https://web.facebook.com/SeedTonic/"><button className="icon-f"><Facebook/></button></a>
-           <a href="https://twitter.com/SeedTonic"><button className="icon-t"><Twitter/></button></a>
-           <a href="https://www.linkedin.com/in/seed-tonic-5a53481a3/"><button className="icon-l"><Linkedin/></button></a>
-           <a href="mailto:seedtonic@gmail.com"><button className="icon-m"><Mailbox/></button></a> 
-           </center>
-           </div>
+           
             <a href="https://wa.me/254710424010"><button className="whatsapp"><Whatsapp/></button></a>  
             </div>
       </>

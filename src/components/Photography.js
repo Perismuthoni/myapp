@@ -3,7 +3,8 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 import "../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/sample.jpg";
+import photo from "../images/services/photo.jpeg";
+import ourwork1 from "../images/services/photo.jpeg";
 
 function Photography() {
   const columns = [
@@ -44,7 +45,7 @@ function Photography() {
               </button>
               </center>
             </p>
-            <div>
+            <div className="table">
               <ReactTable
                 data={photographyData}
                 columns={columns}
@@ -53,12 +54,9 @@ function Photography() {
             </div>
           </div>
           <p>
-            In fine art of any media, there are seven basic elements of art.
-            There are also the principles of design, but I will get to that in
-            another post. I learned the elements of art while studying fine arts
-            at Young Harris College. While we only applied these to other
-            mediums such as painting, charcoal, and pencil drawing, they are
-            just as applicable to photography
+           Whats better than memories captured perfectly, we freeze and preserve moments that whenever
+            you stare at the picture you re-live every part of your moment.
+            With seedtonic photography isn't just taking pictures its capturing  all the details because every detail counts.
           </p>
           <div className="">
             <center>
@@ -68,6 +66,7 @@ function Photography() {
                 alt="Logo"
                 height="300px"
                 width="300px"
+                loading="lazy"
               />
             </center>
           </div>
@@ -79,6 +78,13 @@ function Photography() {
             mediums such as painting, charcoal, and pencil drawing, they are
             just as applicable to photography
           </p>
+          <div>
+            <p><b>Our Work</b></p>
+            <img src={ourwork1} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={ourwork1} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={ourwork1} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={ourwork1} alt="Logo" height="300px" width="300px"  loading="lazy" />
+          </div>
     </div>
   );
 }

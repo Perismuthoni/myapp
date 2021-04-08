@@ -4,53 +4,14 @@
     resize: both;
 
 }
-.root{
-    background-color: black;
-}
 .bg {
     width: 100vw;
+    height: 100vh;
     background: no-repeat center fixed;     
     background: size 100vw;
-    padding: 0vw;
     resize: both;
 }
-a:link {
-    color: gold;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: gold;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: green;
-  }
-  
-  /* selected link */
-  a:active {
-    color: green;
-  }
 
-.navbar {
-    position: static;
-    top: 0px;
-    display: flex;
-    background-color:black; 
-    color: goldenrod;  
-    height: fit-content;   
-    text-size-adjust:inherit;
-    font-family: 'Franklin Gothic Medium';
-    resize: both;
-   
-    
-}
-.icons{
-      align-self: center;
-      align-content: center;
-      
-}
 .logo {
     height: 90px;
     width: 110px;
@@ -59,9 +20,6 @@ a:link {
     height: 200px;
     width: 500px;
 }
-
-
-
 .icon-f {
     background-color: blue;
     border-radius: 50px;
@@ -107,33 +65,4 @@ a:link {
     display: flex;
 }
     
-.whatsapp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    top: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 40px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    
-}
-@media screen and (max-width: 600px) {
-        .whatsapp {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        right: 10px;
-        font-size: 22px;
-    }
-    .navbar.responsive {
-        position: relative;
-
-    }
-}
-@media only screen and (min-width: 1024px) {
-}
 

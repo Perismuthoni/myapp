@@ -3,7 +3,7 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 //import "../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/sample.jpg";
+import photo from "../images/services/image6.jpg";
 
 function Advertisement() {
   const columns = [
@@ -45,7 +45,7 @@ function Advertisement() {
               </button>
               </center>
             </p>
-            <div>
+            <div className="table">
               <ReactTable
                 data={advertisementData}
                 columns={columns}
@@ -70,6 +70,7 @@ function Advertisement() {
                 alt="Logo"
                 height="300px"
                 width="300px"
+                loading="lazy"
               />
             </center>
           </div>

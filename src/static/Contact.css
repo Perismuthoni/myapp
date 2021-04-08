@@ -5,7 +5,7 @@
 .contact {
     margin-top: 10vh;
     padding-bottom: 10px;
-    width: 98vw;
+    width: 100vw;
     resize: both;
     align-content: center;
 }
@@ -19,9 +19,8 @@
    
 }
 .map{
-    align-self: center;
+    align-items: center;
     padding: 0.5vw;
-    width: inherit;
     max-width: 100vw;
     resize: both;
 }

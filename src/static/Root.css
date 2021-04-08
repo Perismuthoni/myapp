@@ -1,0 +1,47 @@
+.root{
+    background-color: black;
+}
+.navbar {
+    align-content: center;
+    position: static;
+    padding-top: 3vh;
+    flex-wrap: wrap;
+    display: flex;
+    background-color:black; 
+    color: goldenrod;  
+    height: 15px;  
+    max-height: max-content; 
+    text-size-adjust:inherit;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 10px;
+    resize: both;
+    color: gold;  
+     
+}
+a{color:gold}
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    
+}
+@media screen and (max-width: 600px) {
+        .whatsapp {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+    
+}
+@media only screen and (min-width: 1024px) {
+}

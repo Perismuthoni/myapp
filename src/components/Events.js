@@ -8,7 +8,7 @@ function Events() {
       
   
   <div class="card">
-  <img className="cardimage" src={image4} alt="Avatar" />
+  <img className="cardimage" src={image4} alt="Avatar" loading="lazy" />
     <h4><b>poetry day</b></h4>
     <p>Date:22/04/2021 <br></br>
     Venue:seedtonic grounds kitengela
@@ -16,7 +16,7 @@ function Events() {
 </div> 
 <hr></hr>
 <div class="card">
-  <img className="cardimage" src={image4} alt="Avatar" />
+  <img className="cardimage" src={image4} alt="Avatar" loading="lazy" />
     <h4><b>Dance day</b></h4>
     <p>Date:22/04/2021 <br></br>
     Venue:seedtonic grounds kitengela
@@ -24,7 +24,7 @@ function Events() {
 </div>
 <hr></hr>
 <div class="card">
-  <img className="cardimage" src={image4} alt="Avatar" />
+  <img className="cardimage" src={image4} alt="Avatar" loading="lazy"/>
     <h4><b>Humanity day</b></h4>
     <p>Date:22/04/2021 <br></br>
     Venue:seedtonic grounds kitengela

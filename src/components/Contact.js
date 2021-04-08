@@ -48,7 +48,11 @@ class About extends React.Component {
           </div>
           <br></br>
           <div className="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.51772455505!2d36.94585181410192!3d-1.4629990362554983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0aa9925d79f9%3A0xfd87c5e946811131!2sNoonkopir%20Girls%20Secondary%20School!5e0!3m2!1sen!2ske!4v1615714003399!5m2!1sen!2ske" width="600" height="450" allowfullscreen="" loading="lazy" title="map"></iframe></div>
+            <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.51772455505!2d36.94585181410192!3d-1.4629990362554983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0aa9925d79f9%3A0xfd87c5e946811131!2sNoonkopir%20Girls%20Secondary%20School!5e0!3m2!1sen!2ske!4v1615714003399!5m2!1sen!2ske" width="600" height="450" allowfullscreen="" loading="lazy" title="map"></iframe>
+            </center>
+            </div>
+           
           </div>
           
         

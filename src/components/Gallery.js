@@ -1,53 +1,41 @@
-import React, { useState, useEffect } from "react";
-import ReactTable from "react-table-6";
-import "react-table-6/react-table.css";
-import "../static/Gallery.css";
-//import { Link } from "react-router-dom";
-import { Facebook,Instagram,} from 'react-bootstrap-icons';
-//import photo from "../images/sample.jpg";
+import React from "react";
+import g1 from "../images/gallery/g1.jpeg";
+import g2 from "../images/gallery/g2.jpeg";
+import g3 from "../images/gallery/g3.jpeg";
+import g4 from "../images/gallery/g4.jpeg";
+import g5 from "../images/gallery/g5.jpeg";
+import g6 from "../images/gallery/g6.jpeg";
+import g7 from "../images/gallery/g7.jpeg";
+import g8 from "../images/gallery/g8.jpeg";
+import g9 from "../images/gallery/g9.jpeg";
+import g10 from "../images/gallery/g10.jpeg";
+import g11 from "../images/gallery/g11.jpeg";
+import g12 from "../images/gallery/g12.jpeg";
+import g13 from "../images/gallery/g13.jpeg";
 
 function Gallery() {
-  const columns = [
-    {
-      Header: "images",
-      accessor: "name",
-    },
-    {
-      Header: "images",
-      accessor: "package",
-    },
-    
-  ];
-  const [advertisementData,setAdvertisementState] = useState([]);
-  const getAdvertisementData = () => {
-    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
-      res.json()
-    );
-  };
-  useEffect(() => {
-    getAdvertisementData().then((resp) => {
-      const data = resp.advertisement;
-      setAdvertisementState(data);
-    });
-  });
-
+  
   return (
     
           <div className="photography">
+            <center>
             <p>
-              <center>SEEDTONIC PHOTOGRAPHY</center>
+              <center>SEEDTONIC FAMILY GALLERY</center>
             </p>
-            <p>              
-                <a href="/login" ><button class="icon-i"><Instagram /></button></a>
-                <a href="/login"  ><button class="icon-f"><Facebook /></button></a>
-            </p>
-            <div>
-              <ReactTable
-                data={advertisementData}
-                columns={columns}
-                defaultPageSize={8}
-              />
-            </div>
+            <img src={g1} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g2} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g3} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g4} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g5} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g6} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g7} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g8} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g9} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g10} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g11} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g12} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            <img src={g13} alt="Logo" height="300px" width="300px"  loading="lazy" />
+            </center>
           </div>
   );
 }
