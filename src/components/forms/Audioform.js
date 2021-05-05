@@ -1,7 +1,4 @@
-import React from "react";
-
-
-//import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "../../static/forms.css";
    
   
@@ -9,90 +6,80 @@ import "../../static/forms.css";
 function Audioform() { 
   
     
+ 
+  const [audiorecordingserviceData, setAudiorecordingserviceState] = useState([]);
+  const getAudiorecordingserviceData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getAudiorecordingserviceData().then((resp) => {
+      const data = resp.audiorecordingservice;
+      setAudiorecordingserviceState(data);
+    });
+  });
+    
+  const [audiorecordingpackageData, setAudiorecordingpackageState] = useState([]);
+  const getAudiorecordingpackageData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getAudiorecordingpackageData().then((resp) => {
+      const data = resp.audiorecordingpackage;
+      setAudiorecordingpackageState(data);
+    });
+  });
+
+  const [audiorecordingsessionData, setAudiorecordingsessionState] = useState([]);
+  const getAudiorecordingsessionData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+      res.json()
+    );
+  };
+  useEffect(() => {
+    getAudiorecordingsessionData().then((resp) => {
+      const data = resp.audiorecordingsession;
+      setAudiorecordingsessionState(data);
+    });
+  });
   return (
     <>
-      <div className="profile">
-        <form className="form">
-          <center>
-            <u>Audio Recording Appointment Form</u>
-          </center>
-          <div>
-            <p>First Name:</p>
-            <input type="text" />
-            <p>Last Name:</p>
-            <input type="text" />
-            <p>email:</p>
-            <input type="email" />
-            <p>Phone Number:</p>
-            <input type="tel" />
-          </div>
-          <div>
-            <label for="service">select service:</label>
+      <div className="appointment">   <center>  <div className="theform" >      <center>
+
+         <p><h4>Photograpy & Videograpy Appointment Form</h4></p> <br/>
+         <p>email:</p>            <input type="email" />
+          <p>Phone Number:</p>         <input type="tel" />  <br/> 
+
+          <label for="service">select service:</label>
             <select id="service" name="service">
-        
+            {audiorecordingserviceData}
             </select>
-          </div>
-          <div>
-            <label for="service">select service:</label>
-            <select id="service" name="service">
-              <option value="photography">studio photography</option>
-              <option value="photography">outdoor photography</option>
-              <option value="audio">Audio recording</option>
-              <option value="audio">outdoor videography</option>
-            </select>
-          </div>
-          <div>
+
             <label for="package">Select package</label>
             <select id="package" name="package">
-              <option value="photography">single</option>
-              <option value="photography">economic</option>
-              <option value="photography">unlimited</option>
+            {audiorecordingpackageData}
             </select>
-          </div>
-          <div>
-            <p>
-              <label for="date">Select date</label>
-            </p>
-            <input type="date" />
-          </div>
-          <div>
+
+            <label for="date">Select date</label> <br/> 
+            <input type="date"/><br/>
+
             <label for="session">Select session</label>
             <select id="session" name="session">
-              <option value="photography">0600hrs-0900hr</option>
-              <option value="photography">0800hrs-1000hr</option>
-              <option value="photography">1100hrs-1300hr</option>
-              <option value="photography">0900hrs-1200hr</option>
-              <option value="photography">1400hrs-1700hr</option>
-              <option value="photography">1600hrs-1900hr</option>
+            {audiorecordingsessionData}
             </select>
-          </div>
-          <div>
-            <label for="confirm">receive confirmation code by</label>
-            <br />
-            <input type="radio" value="Male" name="gender" /> email
-            <input type="radio" value="Female" name="gender" /> SMS
-          </div>
-          <div>
-            <input type="submit" />
-          </div>
-        </form>
-        <div>
-          <p>
-            THANK YOU,
-            <br />
-            You will receive a confirmation
-          </p>
-        </div>
-        <div>
-          <p>
-            THANK YOU,
-            <br />
-            You will receive a confirmation code
-          </p>
-        </div>
-      </div>
+
+            <p>Venue:</p>
+            <input type="text" placeholder=" studio or your preferred location " /><br/>
+            <input type="submit" /><br/>
+            <p><b>THANK YOU</b></p>       
+
+
+         </center>     </div>  </center>    </div>
     </>
   );
-}
+} 
 
   export default Audioform;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-//import './RegistrationForm.css';
-import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../constants/apiConstants';
+import "../../static/Register.css"
+import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../../constants/apiConstants';
 import { withRouter } from "react-router-dom";
 
 function Register(props) {
@@ -64,8 +64,8 @@ function Register(props) {
         }
     }
     return(
-        <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-            <form>
+        <div className="register"><hr/>
+           <center> <form className="registerform">
                 <div className="form-group text-left">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" 
@@ -98,13 +98,13 @@ function Register(props) {
                         onChange={handleChange} 
                     />
                 </div>
-                <button 
+                <center><button 
                     type="submit" 
-                    className="btn btn-primary"
+                    className="regbutton"
                     onClick={handleSubmitClick}
                 >
-                    Register
-                </button>
+                   Register
+                </button></center> 
             </form>
             <div className="alert alert-success mt-2" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
                 {state.successMessage}
@@ -113,7 +113,7 @@ function Register(props) {
                 <span>Already have an account? </span>
                 <span className="loginText" onClick={() => redirectToLogin()}>Login here</span> 
             </div>
-            
+            </center>
         </div>
     )
 }

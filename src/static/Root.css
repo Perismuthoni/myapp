@@ -1,23 +1,32 @@
 .root{
+    position: sticky;
     background-color: black;
+    left: 0;
+    top: 0;
+    width: max-content;
+    min-width: 20%;
+    visibility: visible;
+    
+    
 }
-.navbar {
-    align-content: center;
-    position: static;
-    padding-top: 3vh;
-    flex-wrap: wrap;
-    display: flex;
-    background-color:black; 
-    color: goldenrod;  
-    height: 15px;  
-    max-height: max-content; 
-    text-size-adjust:inherit;
-    font-family: 'Franklin Gothic Medium';
-    font-size: 10px;
-    resize: both;
-    color: gold;  
-     
+.contain{
+    background-color: black;
+    min-height: 100vh;
+    height: fit-content;
+    padding-left: 5%;
+
 }
+.testbutton{
+    background-color: black;
+    color: gold;
+    border: 0px;
+}
+.menubutton{
+
+    width: max-content;
+    min-width: 20%;
+}
+
 a{color:gold}
 .whatsapp {
     position: fixed;

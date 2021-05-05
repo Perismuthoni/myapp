@@ -7,7 +7,7 @@ import "react-table-6/react-table.css";
 
 
 //import { Link } from "react-router-dom";
-import "../static/Profile.css";
+import "../../static/Profile.css";
    
   
 
@@ -15,7 +15,7 @@ function Profile() {
   const columns = [
     {
       Header: "Service",
-      accessor: "name",
+      accessor: "service",
     },
     {
       Header: "Package",
@@ -28,6 +28,10 @@ function Profile() {
     {
       Header: "Date",
       accessor: "date",
+    },
+    {
+      Header: "Session",
+      accessor: "session",
     },
     {
       Header: "Venue",
@@ -95,23 +99,30 @@ function Profile() {
 <p> <center><h3>My Appointments</h3></center></p>
 
  
-<ReactTable
+<ReactTable className="profiletable"
                 data={profileData}
                 columns={columns}
                 defaultPageSize={4}
               />
         
       <div className="profile">
-        <div className="info">
+        <container>
           
-        </div>
-
-
+          <table className="newappointment">
+            <tr><b><u>Book new appointment</u></b></tr>
+            <tr><Link to="/photographyform">photography or Videography</Link></tr>
+            <tr><Link to="/audioform">Audio recording</Link></tr>
+            <tr><Link to="/musicform">School of music</Link></tr>
+            <tr><Link to="/videoform">School of Photography & Videography</Link></tr>
+            <tr><Link to="/emanagementform">Event Management</Link></tr>
+          </table>
+        </container>
 
 
       <Link to="/register">Register</Link>
         <Link to="/login">Login</Link>
-        <Link to="/profile">user profile</Link>
+        <Link to="/photographyform"> form</Link>
+        <Link to="/appointment">appointment</Link>
         
       </div>
     </>

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "../../static/forms.css";
-   
+import "../../static/Appointment.css";
+
+//import ReactTable from "react-table-6";  
+//import "react-table-6/react-table.css"; 
+//import Profile  from "./components/Profile"   
   
 
-function Photographyform() { 
+function Appointment() { 
   
-    
- 
   const [photographyserviceData, setPhotographyserviceState] = useState([]);
   const getPhotographyserviceData = () => {
     return fetch("http://127.0.0.1:5000/api/music").then((res) =>
@@ -47,9 +48,9 @@ function Photographyform() {
   });
   return (
     <>
-      <div className="appointment">   <center>  <div className="theform" >      <center>
+      <div className="appointment">     <form>      <center>
 
-         <p><h4>Photograpy & Videograpy Appointment Form</h4></p> <br/>
+         <p>Photograpy & Videograpy Appointment Form</p> <br/>
          <p>email:</p>            <input type="email" />
           <p>Phone Number:</p>         <input type="tel" />  <br/> 
 
@@ -73,13 +74,12 @@ function Photographyform() {
 
             <p>Venue:</p>
             <input type="text" placeholder=" studio or your preferred location " /><br/>
-            <input type="submit" /><br/>
             <p><b>THANK YOU</b></p>       
 
 
-         </center>     </div>  </center>    </div>
+         </center>     </form>      </div>
     </>
   );
 } 
 
-  export default Photographyform;
+export default Appointment;  

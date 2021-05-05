@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-//import './LoginForm.css';
-import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../constants/apiConstants';
+import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../../constants/apiConstants';
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
-import "../static/Login.css";
+import "../../static/Login.css";
 
 function Login(props) {
     const [state , setState] = useState({
@@ -58,11 +57,9 @@ function Login(props) {
     }
     return (
       <>
-        <div className="login">
-          <div className="row">
-            <div className="column">
-              <div className="card col-lg-4 login-card mt-2 hv-center">
-                <form className="card">
+        <div className="login">   <hr/>      
+              <center>
+                <form className="loginform">
                   <div className="form-group text-center">
                     <label htmlFor="exampleInputEmail1">Email address</label>
                     <input
@@ -114,15 +111,13 @@ function Login(props) {
                     <Link to="/register">Register</Link>
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
+              
+        
             Seedtonic is a talent nurturing platform created to support youths
             who are gifted and talented but lack the necessary resources to
             build their talents
-          </div>
-        </div>
+         
+            </center> </div>
       </>
     );
 }

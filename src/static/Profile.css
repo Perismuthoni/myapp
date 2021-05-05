@@ -74,3 +74,11 @@ to be able to see the preview of the image. */
     border-radius: 50%;
     border: 16px rgb(80, 199, 235) solid;
 }
+.profiletable {
+    background-color: dimgrey;
+    color: gold;
+}
+.newappointment{
+    width: fit-content;
+   align-content: center;
+}

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
-import "../static/Services.css";
+import "../../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/Services/sample.jpg";
+import photo from "../../images/services/image5.jpg";
 
-function Music() {
+function Emanagement() {
   const columns = [
     {
       Header: "Service",
@@ -20,43 +20,45 @@ function Music() {
       accessor: "price",
     },
   ];
-  const [musicData, setMusicState] = useState([]);
-  const getMusicData = () => {
-    return fetch("http://127.0.0.1:5000/api/services").then((res) =>
+  const [audioData, setAudioState] = useState([]);
+  const getAudioData = () => {
+    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
       res.json()
     );
   };
   useEffect(() => {
-    getMusicData().then((resp) => {
+    getAudioData().then((resp) => {
       const data = resp.audio;
-      setMusicState(data);
+      setAudioState(data);
     });
   });
 
   return (
     <div className="services">
-     
+      
+       
           <div className="photography">
             <p>
-              <center>SCHOOL OF MUSIC
+              <center>EVENT MANAGEMENT
                 <br></br>
-              <button className="button">
-                <Link to="/login">Book Appointment</Link>
+                <button className="button">
+                <Link to="/emanagementform">Book Appointment</Link>
               </button>
               </center>
             </p>
             <div className="table">
               <ReactTable
-                data={musicData}
+                data={audioData}
                 columns={columns}
                 defaultPageSize={8}
               />
             </div>
           </div>
-          <p>
-          We are determined to make the world a better place by empowering people with talent.
-          we are here to guide you through your music career.
-          </p>
+       
+       
+          <p><center>
+            We know your events are important you can trust us to ensure your event is not only successful but full of lovely memories
+            </center> </p>
           <div className="">
             <center>
               <img
@@ -69,16 +71,11 @@ function Music() {
               />
             </center>
           </div>
-          <p>
-            In fine art of any media, there are seven basic elements of art.
-            There are also the principles of design, but I will get to that in
-            another post. I learned the elements of art while studying fine arts
-            at Young Harris College. While we only applied these to other
-            mediums such as painting, charcoal, and pencil drawing, they are
-            just as applicable to photography
-          </p>
+          <p><center>
+            They say the more the merrier We say the better the management the broader the smile
+            </center></p>
     </div>
   );
 }
 
-export default Music;
+export default Emanagement;

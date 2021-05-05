@@ -1,0 +1,30 @@
+.register{
+    background-color:whitesmoke;
+    
+}
+.registerform {
+    background-color: darkgray;
+    width: fit-content;
+    padding: 10px;
+    color: gold;
+
+}
+.regbutton{
+    background-color: black;
+    align-self: center;
+    color: gold;
+    
+}
+
+
+.login{
+   background-color: whitesmoke;
+    align-items: center;
+    align-content: center;  
+}
+.loginform{
+    background-color: darkgrey;
+    width: fit-content;
+    padding: 10px;
+    color: gold;
+}

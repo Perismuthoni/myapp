@@ -1,9 +1,10 @@
-.profile {
-    
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72);
+.appointment{
+    background-color: whitesmoke;
+    margin-top: 10px;    
 }
-.form {
-color: gold;
-
-width: 500px;
+.theform{
+    width: 80vw;
+    background-color: grey;
+    color: gold;
+    
 }

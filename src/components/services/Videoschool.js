@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
-//import "../static/Services.css";
+import "../../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/services/image6.jpg";
+import photo from "../../images/services/sample.jpg";
 
-function Advertisement() {
+function Video() {
   const columns = [
     {
       Header: "Service",
@@ -20,40 +20,39 @@ function Advertisement() {
       accessor: "price",
     },
   ];
-  const [advertisementData,setAdvertisementState] = useState([]);
-  const getAdvertisementData = () => {
-    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+  const [videoData, setVideoState] = useState([]);
+  const getVideoData = () => {
+    return fetch("http://127.0.0.1:5000/api/services").then((res) =>
       res.json()
     );
   };
   useEffect(() => {
-    getAdvertisementData().then((resp) => {
-      const data = resp.advertisement;
-      setAdvertisementState(data);
+    getVideoData().then((resp) => {
+      const data = resp.audio;
+      setVideoState(data);
     });
   });
 
   return (
     <div className="services">
-     
+      
           <div className="photography">
             <p>
-              <center>PHOTOGRAPHY &VIDEOGRAPHY
+              <center>SCHOOL OF VIDEOGRAPHY 
                 <br></br>
-                <button className="button"> 
-                <Link to="/login"><center>Book Appointment</center></Link>
+              <button className="button">
+                <Link to="/videoform">Book Appointment</Link>
               </button>
               </center>
             </p>
             <div className="table">
               <ReactTable
-                data={advertisementData}
+                data={videoData}
                 columns={columns}
                 defaultPageSize={8}
               />
             </div>
-        </div>
-        
+          </div>
           <p>
             In fine art of any media, there are seven basic elements of art.
             There are also the principles of design, but I will get to that in
@@ -82,8 +81,8 @@ function Advertisement() {
             mediums such as painting, charcoal, and pencil drawing, they are
             just as applicable to photography
           </p>
-      </div>
+    </div>
   );
 }
 
-export default Advertisement;
+export default Video;

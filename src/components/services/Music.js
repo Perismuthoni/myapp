@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
-import "../static/Services.css";
+import "../../static/Services.css";
 import { Link } from "react-router-dom";
-import photo from "../images/services/image5.jpg";
+import photo from "../../images/services/sample.jpg";
 
-function Emanagement() {
+function Music() {
   const columns = [
     {
       Header: "Service",
@@ -20,49 +20,42 @@ function Emanagement() {
       accessor: "price",
     },
   ];
-  const [audioData, setAudioState] = useState([]);
-  const getAudioData = () => {
-    return fetch("http://127.0.0.1:5000/api/music").then((res) =>
+  const [musicData, setMusicState] = useState([]);
+  const getMusicData = () => {
+    return fetch("http://127.0.0.1:5000/api/services").then((res) =>
       res.json()
     );
   };
   useEffect(() => {
-    getAudioData().then((resp) => {
+    getMusicData().then((resp) => {
       const data = resp.audio;
-      setAudioState(data);
+      setMusicState(data);
     });
   });
 
   return (
     <div className="services">
-      
-       
+     
           <div className="photography">
             <p>
-              <center>EVENT MANAGEMENT
+              <center>SCHOOL OF MUSIC
                 <br></br>
-                <button className="button">
-                <Link to="/login">Book Appointment</Link>
+              <button className="button">
+                <Link to="/musicform">Book Appointment</Link>
               </button>
               </center>
             </p>
             <div className="table">
               <ReactTable
-                data={audioData}
+                data={musicData}
                 columns={columns}
                 defaultPageSize={8}
               />
             </div>
           </div>
-       
-       
           <p>
-            In fine art of any media, there are seven basic elements of art.
-            There are also the principles of design, but I will get to that in
-            another post. I learned the elements of art while studying fine arts
-            at Young Harris College. While we only applied these to other
-            mediums such as painting, charcoal, and pencil drawing, they are
-            just as applicable to photography
+          We are determined to make the world a better place by empowering people with talent.
+          we are here to guide you through your music career.
           </p>
           <div className="">
             <center>
@@ -88,4 +81,4 @@ function Emanagement() {
   );
 }
 
-export default Emanagement;
+export default Music;
