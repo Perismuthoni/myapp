@@ -66,7 +66,7 @@ function Profile() {
     }}
   return (
     <>
-
+<div className="profile">
 <form encType="multipart/form-data">
             <h1 className="form__title">User Name</h1>
             <div className="form__img-input-container">
@@ -124,6 +124,7 @@ function Profile() {
         <Link to="/photographyform"> form</Link>
         <Link to="/appointment">appointment</Link>
         
+      </div>
       </div>
     </>
   );

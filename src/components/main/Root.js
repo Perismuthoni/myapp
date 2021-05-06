@@ -31,7 +31,7 @@ function Root() {
               className="menubutton"
               type="button"
               
-            > MENU</button>
+            > SEEDTONIC STUDIOS</button>
             
              <div className="root">
 
@@ -54,13 +54,14 @@ function Root() {
           <p> <a href="/gallery">GALLERY</a></p>
           <p> <a href="/about">CONTACT US</a></p>
 
-        <a href="https://wa.me/254710424010">
+        
+      </div>
+      </div>
+      <a href="https://wa.me/254710424010">
           <button className="whatsapp">
             <Whatsapp />
           </button>
         </a>
-      </div>
-      </div>
     </>
   );
 }

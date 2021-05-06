@@ -1,21 +1,28 @@
 .root{
     position: sticky;
-    background-color: black;
     left: 0;
     top: 0;
     width: max-content;
-    min-width: 20%;
-    visibility: visible;
-    
-    
+    min-width: 20%;    
 }
 .contain{
     background-color: black;
     min-height: 100vh;
     height: fit-content;
     padding-left: 5%;
+    overflow: hidden;
+    opacity: 1%;
+    
 
 }
+.contain:hover {
+    opacity: 1;
+}
+.contain:-webkit-scrollbar {
+    width: 10px;
+  }
+
+    
 .testbutton{
     background-color: black;
     color: gold;

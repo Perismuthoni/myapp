@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
 .contact {
-    margin-top: 10vh;
     padding-bottom: 10px;
     width: 100vw;
     resize: both;
@@ -33,7 +28,6 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
 }
@@ -54,5 +48,5 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #af2d2d;
-    padding: 20px;
+    
 }
