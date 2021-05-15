@@ -1,14 +1,8 @@
 import React from "react";
-
-import "../../static/Home.css";
-import BackgroundSlider from 'react-background-slider'
-import { Facebook,Instagram,Linkedin,Twitter, Mailbox} from 'react-bootstrap-icons';
-
+import{Link} from "react-router-dom";
 import 'react-slideshow-image/dist/styles.css'
-import image1 from "../../images/image1.jpg";
-import image2 from "../../images/image2.jpg";
-import image3 from "../../images/image3.jpg";
- import image4 from "../../images/image4.jpg";
+import { Fade } from 'react-slideshow-image';
+import "../../static/Home.css";
 
 
 
@@ -18,45 +12,85 @@ function Home() {
  
   
     return (
-      <>
-       <div className="home" >
+      
+       <div className="home">
        
-       <div className="icons">
-             <center>
-           <a href="https://web.facebook.com/SeedTonic/"> < Instagram className="icon-i" /></a>
-           <a href="https://web.facebook.com/SeedTonic/"><Facebook className="icon-f"/></a>
-           <a href="https://twitter.com/SeedTonic"><Twitter className="icon-t"/></a>
-           <a href="https://www.linkedin.com/in/seed-tonic-5a53481a3/"><Linkedin className="icon-l"/></a>
-           <a href="mailto:seedtonic@gmail.com"><Mailbox className="icon-m"/></a> 
-           </center>
-           </div> 
-           <hr></hr>  
-              <BackgroundSlider
-                 className="bg"
-                 images={[image1, image2, image3,image4]}
-                 duration={10} transition={2} /> 
-                             
-              <div class="green-column">
-                
-                <center>
-                  <p>
-                    Welcome to Seedtonic Home of Talent,<br/>
-                    Our delight is offering  exceptional professional services
-                     with maximum efficiency. <br/> 
-                     While being both affordable and dynamic with a touch of creativity
-                  </p>
+        <div className="slide-container">
+        <input 
+       className="searchbar"       
+       type="text" 
+       placeholder="Search..."
+       />
+      <Fade>
+        <div className="fade1">
+          
+          <p><center>
+            <ul>
+              <li><b> <Link to="/band">Seedtonic Band</Link></b></li>
+              our band is skilled in different instruments and perform all genres of music
+              <br/><br/><br/>
+              <li><b><Link to="/music">Music Production </Link> </b></li>
+              We do:podcasts,spoken word,poems,voice over,narrators,Audio production and editing
+                     </ul>
+              </center>
+          </p>
+        </div>
+        <div className="fade2">
+          
+          <p><center>
+            <ul>
+              <li> <b> <Link to="/music">School of Music </Link></b> </li>
+              We offer online classes<br/>
+              we train:Piano,Drums,Saxophone and Guitar
+              <br/><br/><br/>
+              <li><b><Link to="/music">Vocals </Link></b></li>
+            </ul>
+         
+              </center>
+          </p>
+        </div>
+        <div className="fade3">
+          
+          <p><center>
+              <ul>
+                <li><b><Link to="/emanagement">Event Management </Link></b></li>
+                conferences,corporate,Personal events and
+                Live events:fashion shows,gala night,festivals etc..
+                <br/><br/><br/>
+                <li><b><Link to="/advertisement">Advertising </Link></b></li>
+                product,service and brand advertisement
+              </ul>
+              
+              </center>
+          </p>
+        </div>
+        <div className="fade4">
+          
+          <p><center>
+        <ul>
+          <li><b><Link to="/photography">photography </Link></b></li>
+          Corporate,Wedding,graduation,promotion,Wall art photography and portraits
+          <br/><br/>
+          <li><b><Link to="/videography"> Videography</Link></b></li>
+           Short films,documentaries,Video Marketing,Translation and transcribing to English and Kiswahili 
+           <br/><br/>
+          <li><b><Link to="/film">Film </Link></b></li>
+          we cover :TV commercial,series,Set design,Script writing,Casting and Equipment hiring 
+        </ul>
+          
+</center>
+          </p>
+        </div>
+      </Fade>
+    </div>
+       
 
-                  <p>
-                  Thank you for visiting our page<br/>
-                   whatsapp us <br/>
-                   or <br/>
-                   <a href="tel:254710424010"><button>click here</button></a> and give us a call
-                  </p>
-                </center>                   
-               </div>
-                     
-          </div> 
-      </>
+      
+              
+                
+                 {/* duration={10} transition={2} />  */}
+                             
+     </div>
     );
 }
 

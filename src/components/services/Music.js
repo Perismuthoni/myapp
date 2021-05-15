@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
-import "../../static/Services.css";
-import { Link } from "react-router-dom";
-import photo from "../../images/services/sample.jpg";
+import "../../static/services/music.css";
+//import { Link } from "react-router-dom";
+import "react-slideshow-image/dist/styles.css";
+import { Fade } from "react-slideshow-image";
+
 
 function Music() {
   const columns = [
@@ -35,48 +37,71 @@ function Music() {
 
   return (
     <div className="services">
-     
-          <div className="photography">
+      <div className="photography">
+        <p className="title"><b><center>Music/Audio Production</center></b></p>
+        <Fade>
+          <div className="musicfade1">
             <p>
-              <center>SCHOOL OF MUSIC
-                <br></br>
-              <button className="button">
-                <Link to="/musicform">Book Appointment</Link>
-              </button>
-              </center>
+              <center>Studio recording</center>
             </p>
-            <div className="table">
-              <ReactTable
-                data={musicData}
-                columns={columns}
-                defaultPageSize={8}
-              />
-            </div>
           </div>
-          <p>
-          We are determined to make the world a better place by empowering people with talent.
-          we are here to guide you through your music career.
-          </p>
-          <div className="">
-            <center>
-              <img
-                className="photo"
-                src={photo}
-                alt="Logo"
-                height="300px"
-                width="300px"
-                loading="lazy"
-              />
-            </center>
+          <div className="musicfade2">
+            <p>
+              <center>Studio recording</center>
+            </p>
           </div>
-          <p>
-            In fine art of any media, there are seven basic elements of art.
-            There are also the principles of design, but I will get to that in
-            another post. I learned the elements of art while studying fine arts
-            at Young Harris College. While we only applied these to other
-            mediums such as painting, charcoal, and pencil drawing, they are
-            just as applicable to photography
-          </p>
+          <div className="musicfade3">
+            <p>
+              <center>Studio recording</center>
+            </p>
+          </div>
+        </Fade>
+        <p><center>What we do<br/>
+          <h3>Studio services</h3></center></p>
+          <div className="row">
+          <div className="column">
+            <img className="image" src="../../images/six.jpg" alt=""/>
+            <p>
+              <b>Audio Book</b>:<br/>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque sed molestie augue, et suscipit ligula.
+                Etiam mollis in odio condimentum consequat. 
+                Aliquam lacinia vel orci suscipit bibendum.<br/>
+               <center> <button className="buttonA">book appointment</button></center> 
+            </p>
+          </div>
+          <div className="column">
+            <img className="image" src="../../images/six.jpg" alt=""/>
+            <p>
+              
+              <b>Voice Recording</b><br/>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque sed molestie augue, et suscipit ligula.
+                Etiam mollis in odio condimentum consequat. 
+                Aliquam lacinia vel orci suscipit bibendum.<br/>
+                <center> <button className="buttonA">book appointment</button></center>
+
+            </p>
+          </div>
+          <div className="column">
+            <img className="image" src="../../images/six.jpg" alt=""/>
+            <p>
+              <b>Voice Mixing</b><br/>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque sed molestie augue, et suscipit ligula.
+                Etiam mollis in odio condimentum consequat. 
+                Aliquam lacinia vel orci suscipit bibendum.<br/>
+                <center> <button className="buttonA">book appointment</button></center>
+
+            </p>
+          </div>
+          </div>
+        <div className="table">
+          <ReactTable data={musicData} columns={columns} defaultPageSize={8} />
+        </div>
+      </div>
+      
+      
     </div>
   );
 }

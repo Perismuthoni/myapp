@@ -14,13 +14,19 @@ import About from "./components/main/Contact";
 import Register from "./components/main/Register";
 import Login from "./components/main/Login";
 import Profile  from "./components/main/Profile";
+
 import Photography from "./components/services/Photography";
-import Audio from "./components/services/Audio";
 import Music from "./components/services/Music";
-import Advertisement from "./components/services/Advertisement";
+import Audio from "./components/services/Audio";
+import Band from "./components/services/Band";
+import Videography from "./components/services/Videography";
+import Film from "./components/services/Film";
 import Emanagement from "./components/services/Emanagement";
+import Product from "./components/services/product";
+import Artist from "./components/services/Artist";
+
 import "./App.css";
-import Video from "./components/services/Videoschool";
+
 import Advertisementform from "./components/forms/Advertisementform";
 import Audioform from "./components/forms/Audioform";
 import Emanagementform from "./components/forms/Emanagementform";
@@ -44,12 +50,17 @@ class App extends React.Component {
           <Route path={"/register"} component={Register} />
           <Route path={"/login"} component={Login} />
           <Route path={"/profile"} component={Profile} />
-          <Route path={"/photography"} component={Photography} />
-          <Route path={"/audio"} component={Audio} />
+
+          <Route path={"/photography"} component={Photography} />         
           <Route path={"/music"} component={Music} />
-          <Route path={"/video"} component={Video} />
-          <Route path={"/advertisement"} component={Advertisement} />
+          <Route path={"/audio"} component={Audio} />
+          <Route path={"/band"} component={Band} />
+          <Route path={"/videography"} component={Videography} />
+          <Route path={"/film"} component={Film} />
           <Route path={"/emanagement"} component={Emanagement} />
+          <Route path={"/product"} component={Product} />
+          <Route path={"/artist"} component={Artist} />
+          
           <Route path={"/photographyform"} component={Photographyform} />
           <Route path={"/audioform"} component={Audioform} />
           <Route path={"/musicform"} component={Musicform} />

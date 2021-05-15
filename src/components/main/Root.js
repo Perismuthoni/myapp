@@ -1,67 +1,124 @@
 import React, { useState } from "react";
 import { Whatsapp } from "react-bootstrap-icons";
 import "bootstrap/dist/css/bootstrap.css";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "../../static/Root.css";
 import logo from "../../images/logo.png";
 
 function Root() {
+  const [display, setDisplay] = useState();
   const [readMore, setReadMore] = useState(false);
-  const linkName=readMore? <p>SERVICES &#8593; </p> : <p>SERVICES 	
-  &#8595; </p>
-  const extraContent = <div>
-  <p><a href="/advertisiment"> Adverts</a> </p>
-  <p><a href="/photography">Music Production</a></p>
-  <p><a href="/photography">Video Production</a> </p>
-  <p><a href="/audio">Band</a> </p>
-  <p><a href="/emananagement">Event Management</a> </p>
-  <p><a href="#">Photography</a> </p>
-  <p><a href="#">Dj classes</a> </p>
-  <p><a href="/music">School of Music</a> </p>
-  <p><a href="#">Film Production</a> </p>
-  <p><a href="#">Artist Marketing</a> </p>
-  <p><a href="#">Artist Management</a>  </p>
-  <p><a href="#"> Marchandise</a></p>      
-</div>
- 
+  const linkName = readMore ? (
+    <p>
+      {" "}
+      <h6>SERVICES &#8593;</h6>{" "}
+    </p>
+  ) : (
+    <p>
+      {" "}
+      <h6> SERVICES &#8595; </h6>{" "}
+    </p>
+  );
+  const linkName1 = display ? (
+    <p>
+      {" "}
+      <h6>&#9776;  </h6>{" "}
+    </p>
+  ) : (
+    <p>
+      {" "}
+      &#9776; SEEDTONIC {" "}
+    </p>
+  );
+  const extraContent = (
+    <div>
+      <p>
+        <a href="/photography">Photography</a>{" "}
+      </p>
+      <p>
+        <a href="/music">Music/Audio Production</a>
+      </p>
+      
+      
+      <p>
+        <a href="/band">Seedtonic Band</a>{" "}
+      </p>
+      <p>
+        <a href="/videography">Video Production</a>{" "}
+      </p>
+      <p>
+        <a href="./film">Film Production</a>{" "}
+      </p>
+      
+      <p>
+        <a href="/emananagement">Event Management</a>{" "}
+      </p>       
+      
+     
+      <p>
+        <a href="artist">Artist Management & Markerting</a>{" "}
+      </p>
+      <p>
+        <a href="/product">Product Advertising & Marketing</a>{" "}
+      </p>
+    </div>
+  );
 
   return (
-        <>
-          <button
-              className="menubutton"
-              type="button"
-              
-            > SEEDTONIC STUDIOS</button>
-            
-             <div className="root">
-
-        <div className="contain">
-        <img alt="logo" className="logo" src={logo} /> <br />
-          <p>
-            <a href="/home"> HOME</a>
-          </p><br/>
-          <p>
-            <button
-              className="testbutton"
-              onClick= {() => {
-                setReadMore(!readMore);
-              }}
-            > {linkName}</button>
-            {readMore && extraContent}
-          </p>
-          <p> <a href="/profile">PROFILE</a></p>
-          <p> <a href="/events">EVENTS</a></p>
-          <p> <a href="/gallery">GALLERY</a></p>
-          <p> <a href="/about">CONTACT US</a></p>
-
-        
-      </div>
+    <>
+      <div className="root">
+        <button
+          className="menubutton"
+          type="button"
+          onClick={() => {
+            setDisplay(!display);
+          }}
+        >
+          {" "}
+          {linkName1}{" "}
+        </button>
+        {display && (
+          <div className="contain"><hr/>
+            <img alt="logo" className="logo" src={logo} /> <br />
+            <p>
+              <a href="/home"> HOME</a>
+            </p>
+            <br />
+            <p>
+              <button
+                className="testbutton"
+                onClick={() => {
+                  setReadMore(!readMore);
+                }}
+              >
+                {" "}
+                {linkName}
+              </button>
+              {readMore && extraContent}
+            </p>
+            <p>
+              {" "}
+              <a href="/profile">PROFILE</a>
+            </p>
+            <p>
+              {" "}
+              <a href="/events">EVENTS</a>
+            </p>
+            <p>
+              {" "}
+              <a href="/gallery">GALLERY</a>
+            </p>
+            <p>
+              {" "}
+              <a href="/about">CONTACT US</a>
+            </p>
+          </div>
+        )}
       </div>
       <a href="https://wa.me/254710424010">
-          <button className="whatsapp">
-            <Whatsapp />
-          </button>
-        </a>
+        <button className="whatsapp">
+          <Whatsapp />
+        </button>
+      </a>
     </>
   );
 }

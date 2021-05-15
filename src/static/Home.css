@@ -1,28 +1,63 @@
 .home {
-   margin-top: 10vh;
-    width: 100vw;
-    resize: both;
-    color: black;
-
-}
-.bg {
-    width: 100vw;
-    height: 100vh;
-    background: no-repeat center fixed;     
-    background: size 100vw;
-    resize: both;
+     color: black;
+     width: 100%;
+     
 }
 
-.logo {
-    height: 90px;
-    width: 110px;
-}
+.home a{color: black;}
 .image {
-    height: 200px;
     width: 500px;
+    height: 200px;
+    align-self: center;
+        
 }
+.searchbar{
+ 
+  
+  height: 40px;
+  
+  text-align: right;
+  
+}
+.fade1{
+    background-image: url("../images/home/image1l.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: fit-content;
+    min-height: 100vh;
+    border-top: 1px solid gold;
+    background-blend-mode:color;
+}
+.fade2{
+    background-image: url("../images/home/image2l.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: 100vw 100vh;
+    height: fit-content;
+    min-height: 100vh;
+    border-top: 1px solid gold;
+    background-blend-mode:color;
+}
+.fade3{
+    background-image: url("../images/home/image3l.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    height: fit-content;
+    min-height: 100vh;
+    border-top: 1px solid gold;
+    background-blend-mode:color;
+}
+.fade4{
+    background-image: url("../images/home/image4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: fit-content;
+    min-height: 100vh;
+    border-top: 1px solid gold;
+    background-blend-mode:color;
+}
+
 .icon-f {
-    background-color: blue;
+    background-color:brown;
     border-radius: 50px;
     font-size: larger;
     resize: both;
@@ -53,17 +88,44 @@
     border-radius: 50px;
     font-size: larger;
 }
-.marquee {
-    background-color: black;
-    color: gold;
-}
-.form {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 10px;
-    right: 0px;
-    display: flex;
+@media screen and (max-width: 600px) {
+    .bg {
+        width: 100%;
+        height: 100%;
+        background: no-repeat center fixed;     
+    }
+    .fade1{
+        background-image: url("../images/home/image1.jpg");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        height: fit-content;
+        min-height: 100vh;
+        border-top: 1px solid gold;
+    }
+    .fade2{
+        background-image: url("../images/home/image2.jpg"); 
+        background-repeat: no-repeat; 
+        background-size: 100vw 100vh;
+        height: fit-content;
+        min-height: 100vh;
+        border-top: 1px solid gold;
+    }
+    .fade3{
+        background-image: url("../images/home/image3.jpg");
+        background-size: 100vw 100vh;
+       background-repeat: no-repeat;
+        height: fit-content;
+        min-height: 100vh;
+        border-top: 1px solid gold;
+    }
+    .fade4{
+        background-image: url("../images/home/image4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        min-height: 100vh;
+        border-top: 1px solid gold;
+    }
 }
     
 
