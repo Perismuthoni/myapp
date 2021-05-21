@@ -2,7 +2,7 @@ import React from "react";
 import{Link} from "react-router-dom";
 import 'react-slideshow-image/dist/styles.css'
 import { Fade } from 'react-slideshow-image';
-import "../../static/Home.css";
+import "../../static/main/Home.css";
 
 
 

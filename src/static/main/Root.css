@@ -12,8 +12,7 @@
     padding-left: 5%;
     overflow: hidden;
     border-right: 1px solid goldenrod;  
-    visibility: visible;   
-
+    visibility: visible;
 }    
 .testbutton{
     background-color: black;
@@ -52,13 +51,20 @@
     
 }
 @media screen and (max-width: 600px) {
-        .whatsapp {
-        width: 40px;
-        height: 40px;
+    .whatsapp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
         bottom: 10px;
-        right: 10px;
-        font-size: 22px;
-    }
+        right: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        
+    }  
     .root{
         position: sticky;
         left: 0;

@@ -20,7 +20,7 @@
   
 }
 .fade1{
-    background-image: url("../images/home/image1l.jpg");
+    background-image: url("../../images/home/image1l.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     height: fit-content;
@@ -29,7 +29,7 @@
     background-blend-mode:color;
 }
 .fade2{
-    background-image: url("../images/home/image2l.jpg"); 
+    background-image: url("../../images/home/image2l.jpg"); 
     background-repeat: no-repeat; 
     background-size: 100vw 100vh;
     height: fit-content;
@@ -38,7 +38,7 @@
     background-blend-mode:color;
 }
 .fade3{
-    background-image: url("../images/home/image3l.jpg");
+    background-image: url("../../images/home/image3l.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     height: fit-content;
@@ -47,7 +47,7 @@
     background-blend-mode:color;
 }
 .fade4{
-    background-image: url("../images/home/image4.jpg");
+    background-image: url("../../images/home/image4.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     height: fit-content;
@@ -95,7 +95,7 @@
         background: no-repeat center fixed;     
     }
     .fade1{
-        background-image: url("../images/home/image1.jpg");
+        background-image: url("../../images/home/image1.jpg");
         background-size: 100vw 100vh;
         background-repeat: no-repeat;
         height: fit-content;
@@ -103,7 +103,7 @@
         border-top: 1px solid gold;
     }
     .fade2{
-        background-image: url("../images/home/image2.jpg"); 
+        background-image: url("../../images/home/image2.jpg"); 
         background-repeat: no-repeat; 
         background-size: 100vw 100vh;
         height: fit-content;
@@ -111,7 +111,7 @@
         border-top: 1px solid gold;
     }
     .fade3{
-        background-image: url("../images/home/image3.jpg");
+        background-image: url("../../images/home/image3.jpg");
         background-size: 100vw 100vh;
        background-repeat: no-repeat;
         height: fit-content;
@@ -119,7 +119,7 @@
         border-top: 1px solid gold;
     }
     .fade4{
-        background-image: url("../images/home/image4.jpg");
+        background-image: url("../../images/home/image4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: fit-content;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Whatsapp } from "react-bootstrap-icons";
 import "bootstrap/dist/css/bootstrap.css";
-import "../../static/Root.css";
+import "../../static/main/Root.css";
 import logo from "../../images/logo.png";
 
 function Root() {
@@ -81,6 +81,9 @@ function Root() {
             <img alt="logo" className="logo" src={logo} /> <br />
             <p>
               <a href="/home"> HOME</a>
+            </p>
+            <p>
+              <a href="/pricing"> PRICING</a>
             </p>
             <br />
             <p>

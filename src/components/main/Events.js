@@ -1,5 +1,5 @@
 import React from "react";
-import "../../static/Events.css";
+import "../../static/main/Events.css";
 import event1 from "../../images/gallery/g4.jpeg";
 import event2 from "../../images/gallery/g6.jpeg";
 import event3 from "../../images/gallery/g7.jpeg";

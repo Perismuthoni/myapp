@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Root from "./components/main/Root";
 import Home from "./components/main/Home";
 import Events from "./components/main/Events";
-import Appointment from "./components/main/Appointment";
+import Pricing from "./components/main/Pricing";
 import Gallery from "./components/main/Gallery";
 import About from "./components/main/Contact";
 import Register from "./components/main/Register";
@@ -44,7 +44,7 @@ class App extends React.Component {
           <Route path={"/"} component={Root} /> 
           <Route path={"/home"} component={Home} />
           <Route path={"/events"} component={Events} />      
-          <Route path={"/appointment"} component={Appointment} />
+          <Route path={"/pricing"} component={Pricing} />
           <Route path={"/gallery"} component={Gallery} />
           <Route path={"/about"} component={About} />
           <Route path={"/register"} component={Register} />
