@@ -1,0 +1,88 @@
+.page{
+    max-width: 100%;
+    background-color: gainsboro;
+    align-items: center;
+}
+.page a{color: goldenrod;}
+.socials{
+    background-color: rgb(39, 37, 37);
+    color: wheat;
+}
+.fadetext{
+    width: 50%;
+    height: 50vh;  
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to right, black, transparent),linear-gradient(to left, black, transparent);    
+    color: wheat;  
+   
+}
+
+h1{
+    color: rgb(250, 206, 96);
+    text-decoration: double;
+    transform: matrix3d();
+    -ms-text-kashida-space: initial;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bolder;
+}
+.row{
+    align-items: center;
+    column-gap: auto;
+    row-gap: auto;
+    width: 98%;
+    margin: auto;    
+    border-top: solid 1px whitesmoke;
+}
+.column{
+    background-color: wheat;
+    width: 45%;
+    max-width: 100vw;
+    margin: auto;
+    margin-bottom: 2%;
+    text-align: center;  
+    
+}
+.image{
+    width: 100%;
+    
+}
+.table{
+    color: black;
+    width: 90%;
+    max-width: 100vw;
+    margin: auto;
+    background-color: white;
+}
+.catalog{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .page{
+        max-width: 100%;
+        background-color: gainsboro;
+        align-items: center;        
+    }
+    .fadetext{
+        width: 100%;
+        height: 50vh;  
+        margin: auto;
+        text-align: center;
+        background: linear-gradient(to bottom, black, transparent);    
+        color: wheat;  
+       
+    }
+    .column{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3%;
+        
+    }
+    .table{
+        width: 99%;    
+        border: solid 1px goldenrod;
+    }
+    .title{
+        padding-top: 10%;
+    }
+}

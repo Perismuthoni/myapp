@@ -1,0 +1,13 @@
+.artist{
+    max-width: 100%;
+    background-color: gainsboro;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    .artist{
+        max-width: 100%;
+        background-color: gainsboro;
+        align-items: center;
+        padding-top: 10%;
+    }
+}

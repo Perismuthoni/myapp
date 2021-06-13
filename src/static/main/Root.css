@@ -25,10 +25,10 @@
     top: auto;
     left: auto;
     background-color: black;
-    color: goldenrod;
+    color: wheat;
     width: max-content;
     min-width: 5%;  
-    border: 1px;    
+    border: 0ch;    
 }
 .logo {
     height: 90px;

@@ -17,9 +17,8 @@ import Profile  from "./components/main/Profile";
 
 import Photography from "./components/services/Photography";
 import Music from "./components/services/Music";
-import Audio from "./components/services/Audio";
 import Band from "./components/services/Band";
-import Videography from "./components/services/Videography";
+import Video from "./components/services/Video";
 import Film from "./components/services/Film";
 import Emanagement from "./components/services/Emanagement";
 import Product from "./components/services/product";
@@ -39,10 +38,10 @@ class App extends React.Component {
     return (
       <>
       <div className="page">
-        <Router > 
-        {/* basename="/home"      */}
+        <Router basename={"Root"}>
+        
           <Route path={"/"} component={Root} /> 
-          <Route path={"/home"} component={Home} />
+          <Route exact path={"/home"} component={Home} />
           <Route path={"/events"} component={Events} />      
           <Route path={"/pricing"} component={Pricing} />
           <Route path={"/gallery"} component={Gallery} />
@@ -53,9 +52,8 @@ class App extends React.Component {
 
           <Route path={"/photography"} component={Photography} />         
           <Route path={"/music"} component={Music} />
-          <Route path={"/audio"} component={Audio} />
           <Route path={"/band"} component={Band} />
-          <Route path={"/videography"} component={Videography} />
+          <Route path={"/video"} component={Video} />
           <Route path={"/film"} component={Film} />
           <Route path={"/emanagement"} component={Emanagement} />
           <Route path={"/product"} component={Product} />
@@ -66,8 +64,10 @@ class App extends React.Component {
           <Route path={"/musicform"} component={Musicform} />
           <Route path={"/videoform"} component={Videoform} />
           <Route path={"/advertisementform"} component={Advertisementform} />
-          <Route path={"/emanagementform"} component={Emanagementform} />
-
+          <Route path={"/emanagementform"} component={Emanagementform} /> 
+         
+          
+          
         </Router>
        
         </div>

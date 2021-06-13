@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 import "../../static/services/music.css";
+import "../../static/services/general.css";
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 import { Youtube } from "react-bootstrap-icons";
@@ -11,7 +12,6 @@ import m3 from "../../images/music/3.jpg";
 import m4 from "../../images/music/4.jpg";
 
 function Music() {
-  
   const columns = [
     {
       Header: "Service",
@@ -27,15 +27,7 @@ function Music() {
     },
   ];
   const [readMore, setReadMore] = useState(false);
-  const linkName = readMore ? (
-    <p>
-      See less
-    </p>
-  ) : (
-    <p>
-      See details
-    </p>
-  );
+  const linkName = readMore ? <p>See less</p> : <p>See details</p>;
   const [musicData, setMusicState] = useState([]);
   const getMusicData = () => {
     return fetch("http://127.0.0.1:5000/api/music").then((res) => res.json());
@@ -46,21 +38,21 @@ function Music() {
       setMusicState(data);
     });
   });
-  const zoomOutProperties = {
-    duration: 4000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true,
-  };
+  // const zoomOutProperties = {
+  //   duration: 4000,
+  //   transitionDuration: 500,
+  //   infinite: true,
+  //   indicators: true,
+  //   arrows: true,
+  // };
   return (
-    <div className="music">
+    <div className="page">
       <p className="title">
         <b>
           <center>Music/Audio Production</center>
         </b>
       </p>
-      <Fade {...zoomOutProperties}>
+      <Fade className="fades">
         <div className="musicfade1">
           <p className="fadetext">
             <h1>
@@ -103,74 +95,98 @@ function Music() {
         suscipit bibendum
         <br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <br /><br/>
-        <hr/>
+        <br />
+        <br />
+        <hr />
         <ul>
-          <div className="row">   
-          <div className="columnr"><b>Song Bird</b> <br/> Song 1      </div>
-          <div className="columnr">    <iframe
-          className="iframe"            
-            src="https://www.youtube.com/embed/YvRyE_RFbPs"
-            title="YouTube video player"
-            frameborder="0"
-            allowscriptaccess="always"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="false"/>   
-              </div> 
-                </div>
-        </ul>
-        <hr/>
-        <ul>
-          <div className="row">   
-          <div className="columnr"><b>Singer 1</b> <br/> Her everything     </div>
-          <div className="columnr">    <iframe
-           className="iframe"
-            src="https://www.youtube.com/embed/YvRyE_RFbPs"
-            title="YouTube video player"
-            frameborder="0"
-            allowscriptaccess="always"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="false"/>   
-              </div> 
-                </div>
-        </ul>
-        <hr/>
-        <ul>
-          <div className="row">   
-          <div className="columnr"><b>Timothy K</b> <br/> Tomorrow morning  </div>
-          <div className="columnr">    <iframe
-            className="iframe"
-            src="https://www.youtube.com/embed/YvRyE_RFbPs"
-            title="YouTube video player"
-            frameborder="0"
-            allowscriptaccess="always"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="false"/>   
-              </div> 
-                </div>
-        </ul>
-        <hr/>
-        <ul>
-          <div className="row">   
-          <div className="columnr"><b>Sonic the poet</b> <br/>Beyond my sight </div>
-          <div className="columnr">    <iframe
-            className="iframe"
-            src="https://www.youtube.com/embed/YvRyE_RFbPs"
-            title="YouTube video player"
-            frameborder="0"
-            allowscriptaccess="always"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="false"/>   
-              </div> 
-                </div>
+          <div className="row">
+            <div className="columnr">
+              <b>Song Bird</b> <br /> Song 1{" "}
+            </div>
+            <div className="columnr">
+              {" "}
+              <iframe
+                className="iframe"
+                src="https://www.youtube.com/embed/YvRyE_RFbPs"
+                title="YouTube video player"
+                frameborder="0"
+                allowscriptaccess="always"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="false"
+              />
+            </div>
+          </div>
         </ul>
         <hr />
-        
-          <a href="https://www.youtube.com/channel/UCpvlxZd-hlKJT58QiQcxi7Q/videos"> click here to view more like this on our YouTube channel
-          </a> <Youtube/>
-       <br/>
+        <ul>
+          <div className="row">
+            <div className="columnr">
+              <b>Singer 1</b> <br /> Her everything{" "}
+            </div>
+            <div className="columnr">
+              {" "}
+              <iframe
+                className="iframe"
+                src="https://www.youtube.com/embed/YvRyE_RFbPs"
+                title="YouTube video player"
+                frameborder="0"
+                allowscriptaccess="always"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="false"
+              />
+            </div>
+          </div>
+        </ul>
+        <hr />
+        <ul>
+          <div className="row">
+            <div className="columnr">
+              <b>Timothy K</b> <br /> Tomorrow morning{" "}
+            </div>
+            <div className="columnr">
+              {" "}
+              <iframe
+                className="iframe"
+                src="https://www.youtube.com/embed/YvRyE_RFbPs"
+                title="YouTube video player"
+                frameborder="0"
+                allowscriptaccess="always"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="false"
+              />
+            </div>
+          </div>
+        </ul>
+        <hr />
+        <ul>
+          <div className="row">
+            <div className="columnr">
+              <b>Sonic the poet</b> <br />
+              Beyond my sight{" "}
+            </div>
+            <div className="columnr">
+              {" "}
+              <iframe
+                className="iframe"
+                src="https://www.youtube.com/embed/YvRyE_RFbPs"
+                title="YouTube video player"
+                frameborder="0"
+                allowscriptaccess="always"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="false"
+              />
+            </div>
+          </div>
+        </ul>
+        <hr />
+        <a href="https://www.youtube.com/channel/UCpvlxZd-hlKJT58QiQcxi7Q/videos">
+          {" "}
+          click here to view more like this on our YouTube channel
+        </a>{" "}
+        <Youtube />
+        <br />
       </div>
-      <br/>
+      <br />
       <p className="catalog">
         <b>
           <h3>CATALOGUE PRICE</h3>View our packages and price.We have the best
@@ -182,7 +198,7 @@ function Music() {
               setReadMore(!readMore);
             }}
           >
-           {linkName}
+            {linkName}
           </l>{" "}
         </b>
       </p>
@@ -206,28 +222,17 @@ function Music() {
       </p>
       <div className="row">
         <div className="column">
-          <img
-            className="image"
-            src={m1}
-            alt=""
-            loading="lazy"
-          />
+          <img className="image" src={m1} alt="" loading="lazy" />
           <p>
             <b>Audio Book</b>:<br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque sed molestie augue, et suscipit ligula. Etiam mollis in
             odio condimentum consequat. Aliquam lacinia vel orci suscipit
             bibendum.
-            
           </p>
         </div>
         <div className="column">
-          <img
-            className="image"
-            src={m2}
-            alt=""
-            loading="lazy"
-          />
+          <img className="image" src={m2} alt="" loading="lazy" />
           <p>
             <b>Voice Recording</b>
             <br />
@@ -235,16 +240,10 @@ function Music() {
             Pellentesque sed molestie augue, et suscipit ligula. Etiam mollis in
             odio condimentum consequat. Aliquam lacinia vel orci suscipit
             bibendum.
-            
           </p>
         </div>
         <div className="column">
-          <img
-            className="image"
-            src={m3}
-            alt=""
-            loading="lazy"
-          />
+          <img className="image" src={m3} alt="" loading="lazy" />
           <p>
             <b>Voice Mixing</b>
             <br />
@@ -252,16 +251,10 @@ function Music() {
             Pellentesque sed molestie augue, et suscipit ligula. Etiam mollis in
             odio condimentum consequat. Aliquam lacinia vel orci suscipit
             bibendum.
-                       
           </p>
         </div>
         <div className="column">
-          <img
-            className="image"
-            src={m4}
-            alt=""
-            loading="lazy"
-          />
+          <img className="image" src={m4} alt="" loading="lazy" />
           <p>
             <b>Voice Recording</b>
             <br />
@@ -269,9 +262,21 @@ function Music() {
             Pellentesque sed molestie augue, et suscipit ligula. Etiam mollis in
             odio condimentum consequat. Aliquam lacinia vel orci suscipit
             bibendum.
-            
           </p>
         </div>
+      </div>
+      <div className="content">
+        <center>
+          <b>
+            <h3>Seedtonic Music Tv</h3>
+          </b>
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?list=PLnbFOW4DigSR9YxxiwnQXK0wyKSlvRswg"
+            className="channel"
+            title="channel"
+            allowFullScreen="true"
+          ></iframe>
+        </center>
       </div>
     </div>
   );

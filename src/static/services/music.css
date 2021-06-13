@@ -1,112 +1,67 @@
-.music{
-    max-width: 100%;
-    background-color: gainsboro;
-    align-items: center;
-}
-.music a{color: goldenrod;}
-.title{
-    color: black;
-}
-.fadetext{
-    color: azure;
-    font-style:italic;
-}
-h1{
-    color: gold;
-    text-decoration: double;
-    transform: matrix3d();
-    -ms-text-kashida-space: initial;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    font-weight: bolder;
-}
-.musicfade1{
-    background: linear-gradient(to right, black, #858282cc), url("../../images/home/image1l.jpg");    
-    background-size: 100vw ;  
-    height: 70vh;  
-    background-repeat: no-repeat;          
-    border-top: 1px solid gold;       
-}
-.musicfade2{
-    background-image:linear-gradient(to right, black, #444242cc), url("../../images/home/image2l.jpg");    
-    background-repeat: no-repeat; 
-    background-size: 100vw ;  
-    height: 70vh;     
-    border-top: 1px solid gold;
-}
-.musicfade3{
-    background-image:linear-gradient(to right, black, #3a3838cc), url("../../images/home/image3l.jpg");
-    background-size: 100vw ;  
-    height: 70vh; 
-    background-repeat: no-repeat; 
-    border-top: 1px solid gold;
-}
-.row{
-    align-items: center;
-    column-gap: 2cm;
-    width: 95%;
-    margin: auto;
-}
-.column{
-    background-color: white;
-    width: 45%;
-    max-width: 100vw;
-    margin: auto;
-    margin-bottom: 3%;
-    text-align: center;  
-    
-}
-.image{
-    width: 100%;
-    
-}
-.columnr{
-    background-color: white;
-    width: 35%;
-    max-width: 100vw;
-    margin: auto;
-    text-align: center;
-}
-.iframe{
-    width: 80%;
-    height: 25px;            
+.title {
+  color: black;
 }
 
+h1 {
+  color: gold;
+  text-decoration: double;
+  transform: matrix3d();
+  -ms-text-kashida-space: initial;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+.musicfade1,
+.musicfade2,
+.musicfade3 {
+  background-size: 100vw;
+  height: 70vh;
+  border-top: 1px solid gold;
+  
+}
+.musicfade1 {
+  background: url("../../images/home/image1l.jpg");
+  background-size: cover;
+}
+.musicfade2 {
+  background-image: url("../../images/home/image2l.jpg");
+  background-repeat: no-repeat;
+}
+.musicfade3 {
+  background-image: url("../../images/home/image3l.jpg");
+  background-repeat: no-repeat;
+}
 
-.table{
-    color: black;
-    width: 90%;
-    max-width: 100vw;
-    margin: auto;
-    background-color: white;
+.columnr {
+  background-color: white;
+  width: 35%;
+  max-width: 100vw;
+  margin: auto;
+  text-align: center;
 }
-.catalog{
-    text-align: center;
+.iframe {
+  width: 80%;
+  height: 25px;
 }
-.records{
-    text-align: center;
-    background-color: white;
-    width: 90%;
-    margin: auto;
-   
+
+.records {
+  text-align: center;
+  background-color: white;
+  width: 90%;
+  margin: auto;
 }
 @media screen and (max-width: 600px) {
-.column{
-    width: 100%;
-    margin: auto;
-    margin-bottom: 3%;
-    
+  .musicfade1 {
+    background: url("../../images/home/image1l.jpg");
+    background-size: cover;
+  }
+  .musicfade2 {
+    background-image: url("../../images/home/image2l.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .musicfade3 {
+    background-image: url("../../images/home/image3l.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-.table{
-    width: 100%;
-    
-    border: solid 1px goldenrod;
-}
-.music{
-    max-width: 100%;
-    background-color: gainsboro;
-    align-items: center;
-    padding-top: 10%;
-}
-
-}
-

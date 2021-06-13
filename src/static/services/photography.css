@@ -1,0 +1,95 @@
+.photography {
+  max-width: 100%;
+  background-color: gainsboro;
+  align-items: center;
+}
+.photography a {
+  color: goldenrod;
+}
+.photographyfade1,
+.photographyfade2,
+.photographyfade3 {
+  background-size: 100%;
+  height: 70vh;
+  border-top: 1px solid gold;
+}
+.photographyfade1 {
+  background: url("../../images/photography/fade1.jpg");
+  background-size: cover;
+}
+.photographyfade2 {
+  background-image: url("../../images/photography/fade2.jpg");
+  background-repeat: no-repeat;
+}
+.photographyfade3 {
+  background-image: url("../../images/photography/fade3.jpg");
+  background-repeat: no-repeat;
+}
+.funbox1 {
+  width: 60%;
+  height: 40vh;
+  margin: auto;
+  background-color: palevioletred;
+  text-align: center;
+}
+.funbox2 {
+  width: 60%;
+  height: 40vh;
+  margin: auto;
+  background-color: green;
+  text-align: center;
+}
+.funbox3 {
+  width: 60%;
+  height: 40vh;
+  margin: auto;
+  background-color: darkorange;
+  text-align: center;
+}
+.gallery-row{
+  width: 100vw;
+  text-align: center;
+  color-interpolation-filters: linearRGB;
+}
+.samples{
+  width: inherit;
+  max-width: 40vw;
+  height: inherit;
+  max-width: 70vh;
+}
+@media screen and (max-width: 600px) {
+  .funbox1,
+  .funbox2,
+  .funbox3 {
+    width: 97%;
+    height: 40vh;
+    margin: auto;
+  }
+  .photography {
+    max-width: 100%;
+    background-color: gainsboro;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .photographyfade1,
+  .photographyfade2,
+  .photographyfade3 {
+    background-size: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    border-top: 1px solid gold;
+  }
+  .photographyfade1 {
+  background: url("../../images/photography/fade1.jpg");
+  background-size: cover;
+}
+.photographyfade2 {
+  background-image: url("../../images/photography/fade2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photographyfade3 {
+  background-image: url("../../images/photography/fade3.jpg");
+  background-size: cover;
+}
+}

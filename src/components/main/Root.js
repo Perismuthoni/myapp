@@ -43,14 +43,14 @@ function Root() {
         <a href="/band">Seedtonic Band</a>{" "}
       </p>
       <p>
-        <a href="/videography">Video Production</a>{" "}
+        <a href="/video">Video Production</a>{" "}
       </p>
       <p>
         <a href="./film">Film Production</a>{" "}
       </p>
       
       <p>
-        <a href="/emananagement">Event Management</a>{" "}
+        <a href="/emanagement">Event Management</a>{" "}
       </p>       
       
      
@@ -82,10 +82,8 @@ function Root() {
             <p>
               <a href="/home"> HOME</a>
             </p>
-            <p>
-              <a href="/pricing"> PRICING</a>
-            </p>
-            <br />
+            
+            
             <p>
               <button
                 className="testbutton"

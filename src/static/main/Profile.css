@@ -1,26 +1,13 @@
 .profile{
-    margin-top: 10vh;
-    width: 100vw;
-    resize: both;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.form__title {
+    width: 100%;
     
-    text-align: center;
-    color: #002952;
 }
 
-.form__img-input-container {
-    position: relative;
-    left: 0px;
-    width: 300px;
-    height: 300px;
-    margin: auto;
+
+
+.img-container {
+    width: 80%;
+   margin: auto;
 }
 
 /* this class is used to hide the file input */
@@ -40,33 +27,6 @@ input.visually-hidden:focus-within + label {
 
 /* The file input is a labeled control, and since we hid it, 
 we're going to use its associated label to trigger it */
-.form-img__file-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgba(245, 245, 231, .3);
-}
-
-.form-img__file-label:hover {
-    background-color: rgba(245, 245, 231, .5);
-}
-
-.form-img__file-label > svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: .7;
-    transform: translate(-50%, -50%);
-}
-
-.form-img__file-label:hover > svg {
-    opacity: 1;
-}
 
 /* The image element is going to be positioned under the 
 label element, since the label is a see through, we're going 
@@ -75,13 +35,11 @@ to be able to see the preview of the image. */
     display: block;
     width: 300px;
     height: 300px;
-    object-fit: contain;
     border-radius: 50%;
-    border: 16px rgb(80, 199, 235) solid;
-}
-.profiletable {
-    background-color: dimgrey;
-    color: gold;
+    margin: auto;
+    object-fit: contain;
+    
+    border: 5px rgb(80, 199, 235) solid;
 }
 .newappointment{
     width: fit-content;

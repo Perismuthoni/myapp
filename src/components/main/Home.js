@@ -15,7 +15,6 @@ function Home() {
       
        <div className="home">
        
-        <div className="slide-container">
         <input 
        className="searchbar"       
        type="text" 
@@ -24,7 +23,7 @@ function Home() {
       <Fade>
         <div className="fade1">
           
-          <p><center>
+          <center>
             <ul>
               <li><b> <Link to="/band">Seedtonic Band</Link></b></li>
               our band is skilled in different instruments and perform all genres of music
@@ -33,7 +32,7 @@ function Home() {
               We do:podcasts,spoken word,poems,voice over,narrators,Audio production and editing
                      </ul>
               </center>
-          </p>
+         
         </div>
         <div className="fade2">
           
@@ -82,14 +81,7 @@ function Home() {
           </p>
         </div>
       </Fade>
-    </div>
-       
-
-      
-              
-                
-                 {/* duration={10} transition={2} />  */}
-                             
+                   
      </div>
     );
 }

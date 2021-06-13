@@ -1,131 +1,115 @@
 .home {
-     color: black;
-     width: 100%;
-     
+  color: wheat;
+  width: 100%;
 }
 
-.home a{color: black;}
+.home a {
+  color: black;
+}
+.home ul{
+  background: linear-gradient(to bottom, black, transparent);
+  height: fit-content;
+  min-height: 100vh;
+}
 .image {
-    width: 500px;
-    height: 200px;
-    align-self: center;
-        
+  width: 500px;
+  height: 200px;
+  align-self: center;
 }
-.searchbar{
- 
-  
+.searchbar {
   height: 40px;
-  
   text-align: right;
-  
 }
-.fade1{
-    background-image: url("../../images/home/image1l.jpg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    height: fit-content;
-    min-height: 100vh;
-    border-top: 1px solid gold;
-    background-blend-mode:color;
+.fade1 {
+  background: url("../../images/home/image1l.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: fit-content;
+  min-height: 100vh;
 }
-.fade2{
-    background-image: url("../../images/home/image2l.jpg"); 
-    background-repeat: no-repeat; 
-    background-size: 100vw 100vh;
-    height: fit-content;
-    min-height: 100vh;
-    border-top: 1px solid gold;
-    background-blend-mode:color;
+.fade2 {
+  background-image: url("../../images/home/image2l.jpg"),linear-gradient(to right, black, transparent),linear-gradient(to left, black, transparent);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: fit-content;
+  min-height: 100vh;
 }
-.fade3{
-    background-image: url("../../images/home/image3l.jpg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    height: fit-content;
-    min-height: 100vh;
-    border-top: 1px solid gold;
-    background-blend-mode:color;
+.fade3 {
+  background-image: url("../../images/home/image3l.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: fit-content;
+  min-height: 100vh;
 }
-.fade4{
-    background-image: url("../../images/home/image4.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    height: fit-content;
-    min-height: 100vh;
-    border-top: 1px solid gold;
-    background-blend-mode:color;
+.fade4 {
+  background-image: url("../../images/home/image4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: fit-content;
+  min-height: 100vh;
+  border-top: 1px solid gold;
+  background-blend-mode: color;
 }
 
 .icon-f {
-    background-color:brown;
-    border-radius: 50px;
-    font-size: larger;
-    resize: both;
+  background-color: brown;
+  border-radius: 50px;
+  font-size: larger;
+  resize: both;
 }
 .icon-w {
-    background-color: green;
-    border-radius: 50px;
-    font-size: larger;
+  background-color: green;
+  border-radius: 50px;
+  font-size: larger;
 }
 .icon-t {
-    background-color: skyblue;
-    border-radius: 50px;
-    font-size: larger;
-
+  background-color: skyblue;
+  border-radius: 50px;
+  font-size: larger;
 }
 .icon-i {
-    background-color: orange;
-    border-radius: 50px;
-    font-size: larger;
+  background-color: orange;
+  border-radius: 50px;
+  font-size: larger;
 }
 .icon-l {
-    background-color: skyblue;
-    border-radius: 50px;
-    font-size: larger;
+  background-color: skyblue;
+  border-radius: 50px;
+  font-size: larger;
 }
 .icon-m {
-    background-color: red;
-    border-radius: 50px;
-    font-size: larger;
+  background-color: red;
+  border-radius: 50px;
+  font-size: larger;
 }
 @media screen and (max-width: 600px) {
-    .bg {
-        width: 100%;
-        height: 100%;
-        background: no-repeat center fixed;     
-    }
-    .fade1{
-        background-image: url("../../images/home/image1.jpg");
-        background-size: 100vw 100vh;
-        background-repeat: no-repeat;
-        height: fit-content;
-        min-height: 100vh;
-        border-top: 1px solid gold;
-    }
-    .fade2{
-        background-image: url("../../images/home/image2.jpg"); 
-        background-repeat: no-repeat; 
-        background-size: 100vw 100vh;
-        height: fit-content;
-        min-height: 100vh;
-        border-top: 1px solid gold;
-    }
-    .fade3{
-        background-image: url("../../images/home/image3.jpg");
-        background-size: 100vw 100vh;
-       background-repeat: no-repeat;
-        height: fit-content;
-        min-height: 100vh;
-        border-top: 1px solid gold;
-    }
-    .fade4{
-        background-image: url("../../images/home/image4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: fit-content;
-        min-height: 100vh;
-        border-top: 1px solid gold;
-    }
+  .bg {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center fixed;
+  }
+  .fade1 {
+    background-image: url("../../images/home/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .fade2 {
+    background-image: url("../../images/home/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .fade3 {
+    background-image: url("../../images/home/image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .fade4 {
+    background-image: url("../../images/home/image4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
 }
-    
-

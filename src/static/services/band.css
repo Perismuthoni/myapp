@@ -1,0 +1,56 @@
+
+.band-fade1 {
+    background:url("../../images/home/image1l.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 70vh;
+}
+.band-fade2 {
+  background-image: url("../../images/photography/fade2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+    min-height: 70vh;
+}
+.band-fade3 {
+  background-image: url("../../images/photography/fade3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+    min-height: 70vh;
+}
+.band-fade4 {
+    background-image: url("../../images/photography/fade2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 70vh;
+  }
+@media screen and (max-width: 600px) {
+    
+    .bandfade1 {
+        background: url("../../images/photography/fade1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+  }
+  .bandfade2 {
+    background: url("../../images/photography/fade2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+  }
+  .bandfade3 {
+    background: url("../../images/photography/fade1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+  }
+  .bandfade4 {
+    background: url("../../images/photography/fade3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+  }
+}
