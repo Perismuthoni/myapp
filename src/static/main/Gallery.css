@@ -44,4 +44,17 @@ text-align: center;
        
        
     }
+    .image{
+        height: inherit;
+        width: inherit;
+        max-height: 80vh;
+        max-width: 90vw;
+    }
+    .all{
+        width: inherit;
+        height: inherit;
+        max-height: 80vh;
+        max-width: 98vw;
+        margin: auto;
+    }
 }

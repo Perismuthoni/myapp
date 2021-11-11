@@ -20,6 +20,22 @@ const all = [
   require("../../images/gallery/g3.jpeg"),
   require("../../images/gallery/g4.jpeg"),
   require("../../images/gallery/g5.jpeg"),
+  require("../../images/photography/sample1.jpg"),
+  require("../../images/photography/sample2.jpg"),
+  require("../../images/photography/sample3.jpg"),
+  require("../../images/photography/sample4.jpg"),
+  require("../../images/gallery/g6.jpeg"),
+  require("../../images/gallery/g7.jpeg"),
+  require("../../images/gallery/g8.jpeg"),
+  require("../../images/gallery/g9.jpeg"),
+  require("../../images/gallery/g10.jpeg"),
+  require("../../images/gallery/g11.jpeg"),
+  require("../../images/gallery/g12.jpeg"),
+  require("../../images/gallery/g13.jpeg"),
+  require("../../images/home/image1.jpg"),
+  require("../../images/home/image2.jpg"),
+  require("../../images/home/image3.jpg"),
+  require("../../images/home/image4.jpg"),
 ];
 const corporate = [
   require("../../images/gallery/g1.jpeg"),
@@ -70,6 +86,8 @@ const wall = [
   require("../../images/gallery/g4.jpeg"),
   require("../../images/gallery/g5.jpeg")
   ];
+ 
+
 
   const linkName = display ? (
     <p>
@@ -125,10 +143,16 @@ const wall = [
         )}
       </p>
       </div>
+
+      <div>
+      {general.map((image) => <img  className="image" key={image} src={image} alt={general.indexOf} loading="lazy"/>)} &&
+      {corporate.map((image) => <img  className="image" key={image} src={image} alt={corporate.indexOf} loading="lazy"/>)}
+      </div>
+
       <div className="category-row" id="row1">
         <p><b>Corporate Events</b></p><br/>
        <Fade>
-       {corporate.map((image) => <img  className="image" key={image} src={image} alt={corporate.indexOf}/>)}      
+       {corporate.map((image) => <img  className="image" key={image} src={image} alt={corporate.indexOf} loading="lazy"/>)}      
          </Fade> 
       </div><br/>
       <div className="category-row" id ="row2">
@@ -136,7 +160,7 @@ const wall = [
         Parties, anniversaries,graduation,Weddings
         </p><br/>
       <Fade>
-      {general.map((image) => <img  className="image" key={image} src={image} alt={general.indexOf}/>)}
+      {general.map((image) => <img  className="image" key={image} src={image} alt={general.indexOf} loading="lazy"/>)}
           
         </Fade>
         </div><br/>
@@ -145,28 +169,28 @@ const wall = [
         family portrait, baby pictures, baby bump pictures,couple pictures
         </p><br/>
         <Fade>
-        {personal.map((image) => <img  className="image" key={image} src={image} alt={personal.indexOf}/>)}
+        {personal.map((image) => <img  className="image" key={image} src={image} alt={personal.indexOf} loading="lazy"/>)}
           
         </Fade>
       </div><br/>
       <div className="category-row" id="row4">
         <p><b>Music Video Photography</b></p><br/>
         <Fade>
-        {music.map((image) => <img  className="image" key={image} src={image} alt={music.indexOf}/>)}
+        {music.map((image) => <img  className="image" key={image} src={image} alt={music.indexOf} loading="lazy"/>)}
           
         </Fade>
       </div><br/>
       <div className="category-row" id="row5">
       <p><b>Documentary & Short-Films</b></p>
       <Fade>
-      {documentary.map((image) => <img  className="image" key={image} src={image} alt={documentary.indexOf}/>)}
+      {documentary.map((image) => <img  className="image" key={image} src={image} alt={documentary.indexOf} loading="lazy"/>)}
           
         </Fade>
       </div><br/>
       <div className="category-row" id="row6">
         <p><b>Markerting & Promotion Photography</b></p><br/>
         <Fade>
-        {promo.map((image) => <img  className="image" key={image} src={image} alt={promo.indexOf}/>)}
+        {promo.map((image) => <img  className="image" key={image} src={image} alt={promo.indexOf} loading="lazy"/>)}
           
         </Fade>
       </div><br/>
@@ -179,6 +203,7 @@ const wall = [
         key={image} 
         src={image} 
         alt={wall.indexOf}
+        loading="lazy"
         />)}
           
         </Fade>
@@ -191,6 +216,7 @@ const wall = [
         key={image} 
         src={image} 
         alt={all.indexOf}
+        loading="lazy"
         />)}
       </div>
     </div>

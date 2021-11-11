@@ -1,4 +1,95 @@
+.emanagement {
+    max-width: 100%;
+    background-color: gainsboro;
+    align-items: center;
+  }
+  .emanagement a {
+    color: goldenrod;
+  }
+  .emanagementfade1,
+  .emanagementfade2,
+  .emanagementfade3,
+  .emanagementfade4 {
+    background-size: 100%;
+    height: 70vh;
+    border-top: 1px solid gold;
+  }
+  .emanagementfade1 {
+    background: url("../../images/emanagement/one.jpeg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+  }
+  .emanagementfade2 {
+    background-image: url("../../images/emanagement/two.jpeg");
+    background-repeat: no-repeat;
+  }
+  .emanagementfade3 {
+    background-image: url("../../images/emanagement/three.jpeg");
+    background-repeat: no-repeat;
+  }
+  .emanagementfade4 {
+    background-image: url("../../images/emanagement/four.jpeg");
+    background-repeat: no-repeat;
+  }
+ 
 
-@media screen and (max-width: 600px) {
-    
-}
+  .gallery-row {
+    width: 100vw;
+    text-align: center;
+    color-interpolation-filters: linearRGB;
+  }
+  .samples {
+    width: inherit;
+    max-width: 40vw;
+    height: inherit;
+    max-width: 70vh;
+  }
+  .holder {
+    align-items: center;
+    width: 30vw;
+    height: 70vh;
+    border: solid black 1px;
+    column-gap: 3% ;
+  }
+  .pgallery {
+    width: inherit;
+    max-width: 99%;
+    height: inherit;
+    max-height: 99%;
+  }
+  @media screen and (max-width: 600px) {
+   
+    .emanagement {
+      max-width: 100%;
+      background-color: gainsboro;
+      align-items: center;
+      padding-top: 10%;
+    }
+    .emanagementfade1,
+    .emanagementfade2,
+    .emanagementfade3 {
+      background-size: 100%;
+      height: 70vh;
+      background-repeat: no-repeat;
+      border-top: 1px solid gold;
+    }
+    .emanagementfade1 {
+      background: url("../../images/emanagement/one.jpeg");
+      background-size: cover;
+    }
+    .emanagementfade2 {
+      background-image: url("../../images/emanagement/two.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .emanagementfade3 {
+      background-image: url("../../images/emanagement/three.jpeg");
+      background-size: cover;
+    }
+    .emanagementfade4 {
+        background-image: url("../../images/emanagement/four.jpeg");
+        background-size: cover;
+      }
+  }
+  

@@ -14,7 +14,7 @@
   border-top: 1px solid gold;
 }
 .photographyfade1 {
-  background: url("../../images/photography/fade1.jpg");
+  background: url("../../images/photography/corporate.jpeg");
   background-size: cover;
 }
 .photographyfade2 {
@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
 }
 .photographyfade3 {
-  background-image: url("../../images/photography/fade3.jpg");
+  background-image: url("../../images/photography/babybump.jpeg");
   background-repeat: no-repeat;
 }
 .funbox1 {
@@ -46,16 +46,29 @@
   background-color: darkorange;
   text-align: center;
 }
-.gallery-row{
+.gallery-row {
   width: 100vw;
   text-align: center;
   color-interpolation-filters: linearRGB;
 }
-.samples{
+.samples {
   width: inherit;
   max-width: 40vw;
   height: inherit;
   max-width: 70vh;
+}
+.holder {
+  align-items: center;
+  width: 30vw;
+  height: 70vh;
+  border: solid black 1px;
+  column-gap: 3% ;
+}
+.pgallery {
+  width: inherit;
+  max-width: 99%;
+  height: inherit;
+  max-height: 99%;
 }
 @media screen and (max-width: 600px) {
   .funbox1,
@@ -80,16 +93,16 @@
     border-top: 1px solid gold;
   }
   .photographyfade1 {
-  background: url("../../images/photography/fade1.jpg");
-  background-size: cover;
-}
-.photographyfade2 {
-  background-image: url("../../images/photography/fade2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.photographyfade3 {
-  background-image: url("../../images/photography/fade3.jpg");
-  background-size: cover;
-}
+    background: url("../../images/photography/corporate.jpeg");
+    background-size: cover;
+  }
+  .photographyfade2 {
+    background-image: url("../../images/photography/fade2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .photographyfade3 {
+    background-image: url("../../images/photography/babybump.jpeg");
+    background-size: cover;
+  }
 }

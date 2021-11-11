@@ -7,9 +7,11 @@ import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 import p1 from "../../images/photography/1.jpg";
 import p2 from "../../images/photography/2.jpg";
-import p3 from "../../images/photography/3.jpg"
 import p4 from "../../images/photography/4.jpg";
 import p5 from "../../images/photography/5.jpg";
+import corporate from "../../images/photography/corporate.jpeg"
+import wedding from "../../images/photography/wedding.jpeg"
+import team from "../../images/photography/team.jpeg"
 // import s1 from "../../images/photography/sample1.jpg";
 // import s2 from "../../images/photography/sample2.jpg";
 // import s3 from "../../images/photography/sample3.jpg";
@@ -174,6 +176,44 @@ George Eastman, the founder of Kodak,<br/>
         </center>
       </p>
       <div className="row">
+      <div className="column">
+          <img
+            className="image"
+            src={wedding}
+            alt=""
+            loading="lazy"
+          />
+          <p>
+            <b>Wedding  photography</b>:<br />
+            Our wedding photography team documents  your happy day and tells your story .
+             It not only delivers quality and unique pictures and videography but also capture
+              your authenitic moments.
+
+Over the past few years,
+ we have been fortunate enough to work in Kenya's 
+ most popular and most luxurious wedding venues.
+ Weddings are events that we all treasure. 
+ We capture your wedding day in the most natural way and keeping it real.
+
+            
+          </p>
+        </div>
+        <div className="column">
+          <img
+            className="image"
+            src={corporate}
+            alt=""
+            loading="lazy"
+          />
+          <p>
+            <b>corporate photography</b>:<br />
+            We are the leading planners of local and International conferences, meetings,exhibitions, galas , awards and all corporate event in Kenya . People are our business, service is our product and quality is what we deliver.We get to partner with you by offering you a complete service from strategic programme design, to venue search, interpretation services, accommodation, catering, social events, entertainment, transportation, budgeting, administrative management and so much more.
+
+Our team make your event seamless and successful with anticipation covered for all thins that can go wrong including backup generators and security. 
+
+            
+          </p>
+        </div>
         <div className="column">
           <img
             className="image"
@@ -190,6 +230,8 @@ George Eastman, the founder of Kodak,<br/>
             
           </p>
         </div>
+        
+
         <div className="column">
           <img
             className="image"
@@ -210,7 +252,7 @@ George Eastman, the founder of Kodak,<br/>
         <div className="column">
           <img
             className="image"
-            src={p3}
+            src={team}
             alt=""
             loading="lazy"
           />
@@ -264,12 +306,14 @@ George Eastman, the founder of Kodak,<br/>
         <p><b>Our Work</b><br/>
         <a href="/gallery">visit our gallery page to see more like this</a>
         </p>
-       
-        {samples.map((image) => <img key={image} src={image} alt=""/>)}
-        
-          
-        
-      
+       <p className="gallery">
+        {samples.map((image) =>
+        <columns className="holder">
+           <img key={image} src={image} alt={image.key} className="pgallery" loading="lazy"/>
+           </columns> 
+           )}
+        </p>
+             
         
 
       </div>
